@@ -1,158 +1,485 @@
 <section class="slide title" id="title" data-auto="title">
-  <aside class="notes">REPLACE: الترحيب، والتعريف بنفسك، وسؤال للقاعة يضبط الإيقاع، وإيقاع اليوم</aside>
+  <aside class="notes"><p>ابدأ بسؤال: من سمع في اجتماع رقمين مختلفين للشيء نفسه؟ اليوم نعرف من أين يأتي ذلك: من كلمة بلا تعريف، أو من رقم بلا مسار. كل الأيام تبدأ من ملفات جاهزة؛ اليوم يبدأ الجميع من السجل المرجعي لا من سجلاتهم.</p></aside>
 </section>
 
-<section class="slide" id="agenda" data-auto="agenda"></section>
+<section class="slide" id="agenda" data-auto="agenda">
+  <aside class="notes"><p>أربع جلسات: القاموس، والتعريف المتعارض، وتتبع الأصل، والكتالوج. المختبر الأول دون أي مساعد ذكاء اصطناعي. الاستراحات بزر B.</p></aside>
+</section>
+
+<section class="slide" id="check-review-day1" data-lo="LO2">
+  <div class="kicker">مراجعة أمس</div>
+  <h2>قرار بلا صاحب</h2>
+  <div class="quiz" data-type="single" data-lo="LO2">
+    <p class="lead">في المراكز المجتمعية، طلب مدرب قائمة المشتركين بأرقام جوالاتهم. أعدّ المنسق القائمة، وينتظر المشرف الفني من يقول له «أرسل». من يقول ذلك؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يخلط بين من أعدّ القائمة ومن يملك قرار مشاركتها">المنسق، لأنه أعدّ القائمة وراجع أسماءها</div>
+      <div class="opt" data-why="يرفع كل قرار إلى الرئيس التنفيذي، وهو يقود المكتب ولا يملك بيانات المجال">الرئيس التنفيذي للبيانات في الهيئة</div>
+      <div class="opt" data-ok>مالك بيانات المراكز المجتمعية</div>
+      <div class="opt" data-why="يظن أن من يرسل الملف يقرر إرساله: المشرف ينفذ بعد الموافقة">المشرف الفني نفسه، لأنه من سيرسل الملف</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> مشاركة بيانات مجال قرار يعتمده مالكه. المنسق أعدّ، والمشرف الفني سينفذ.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. دقيقة واحدة. إن اختار أحد «د»، أعد قاعدة الأمس: من يقرر ليس من ينفذ.</p></aside>
+</section>
 
 <!-- الجلسة 1 -->
 
 <section class="slide section" id="s1" data-auto="section" data-session="1"></section>
 
-<section class="slide" id="s1-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
-  </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+<section class="slide" id="glossary-vs-dictionary" data-lo="LO3">
+  <div class="kicker">قاموسان لا قاموس واحد</div>
+  <h2>قاموس الأعمال يعرّف الكلمة، وقاموس البيانات يصف العمود</h2>
+  <table class="t">
+    <tr><th></th><th>قاموس مصطلحات الأعمال</th><th>قاموس البيانات</th></tr>
+    <tr><td>يجيب عن</td><td>ماذا نعني بـ«زيارة مكتملة»؟</td><td>ما في العمود <span class="ltr">visit_status</span>، وما قيمه المسموحة؟</td></tr>
+    <tr><td>يكتبه</td><td>مشرف الأعمال، ويعتمده المالك</td><td>المشرف الفني من النظام</td></tr>
+    <tr><td>يقرؤه</td><td>المدير والمحلل والجمهور</td><td>المحلل والمطور</td></tr>
+    <tr><td>يتغير حين</td><td>يتغير قرار في العمل</td><td>يتغير النظام</td></tr>
+  </table>
+  <div class="callout tip mt small"><b>الربط.</b> العمود <span class="ltr">visit_status</span> يشير إلى المصطلح «زيارة مكتملة». بلا هذا الربط، يحسب كل محلل الزيارة المكتملة بطريقته.</div>
+  <aside class="notes"><p>الأمثلة من خدمة الرعاية المنزلية. اسأل: أيهما يوجد في جهاتكم؟ غالبًا قاموس بيانات في وثيقة النظام، ولا قاموس أعمال. المختبر يبدأ بقاموس الأعمال لأنه الأصعب والأهم لصاحب القرار.</p></aside>
 </section>
 
-<section class="slide" id="s1-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="anatomy-of-an-entry" data-lo="LO3">
+  <div class="kicker">تشريح المدخل</div>
+  <h2>المدخل الجيد يقول ما الشيء، وكيف يُعد، ومن يعتمده</h2>
+  <div class="cols cols-2">
+    <div class="card tint c-navy">
+      <h4>زيارة مكتملة</h4>
+      <p class="small"><b>التعريف:</b> زيارة رعاية منزلية حضرها مقدم الرعاية في المنزل وسجّل نتيجتها في النظام في اليوم نفسه.</p>
+      <p class="small"><b>قاعدة العد:</b> لها تاريخ حضور ونتيجة غير فارغة.</p>
+      <p class="small"><b>لا يدخل فيها:</b> زيارة مجدولة لم يُفتح فيها الباب.</p>
+      <p class="small mb0"><b>المالك · المشرف · المصدر · الحالة:</b> مديرة الرعاية · منسقة الزيارات · اجتماع الخدمة · مسودة</p>
+    </div>
+    <ul class="bullets">
+      <li>المرادفات تُذكر حتى يجدها الباحث بأي اسم</li>
+      <li>«لا يدخل فيها» يحسم الحالات الحدية</li>
+      <li>المصدر يجعل المدخل قابلًا للمراجعة</li>
+      <li>الحالة تقول هل يُعتمد عليه بعد</li>
+    </ul>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <aside class="notes"><p>اقرأ المدخل بصوت عالٍ، ثم اسأل: لو جاء غدًا محلل جديد، هل يعدّ الزيارات بالطريقة نفسها؟ هذا اختبار المدخل الجيد. في المختبر قالب بالأعمدة التسعة نفسها.</p></aside>
+</section>
+
+<section class="slide" id="genus-then-difference" data-lo="LO3">
+  <div class="kicker">كيف يُكتب التعريف</div>
+  <h2>نوع الشيء أولًا، ثم ما يميزه عن غيره من نوعه</h2>
+  <table class="t">
+    <tr><th>ضعيف</th><th>لماذا</th><th>أقوى</th></tr>
+    <tr><td>المستفيد من الرعاية هو من يستفيد من الخدمة</td><td>دائري</td><td>شخص مسجل في الخدمة تُقدَّم له زيارات منزلية بخطة رعاية معتمدة</td></tr>
+    <tr><td>الزيارة الطارئة مهمة جدًا وتتطلب سرعة</td><td>وصف لا تعريف</td><td>زيارة غير مجدولة تُطلب خلال 24 ساعة بسبب تغير في حال المستفيد</td></tr>
+    <tr><td>خطة الرعاية: تشمل الأدوية والتمارين وغيرها</td><td>قائمة مفتوحة</td><td>وثيقة يعتمدها الطبيب المشرف تحدد نوع الزيارات وتكرارها لكل مستفيد</td></tr>
+  </table>
+  <aside class="notes"><p>المثال الثاني يحمل رقمًا (24 ساعة) لأنه قاعدة في التعريف الافتراضي للرعاية المنزلية، لا معلومة عن جهة حقيقية. اطلب من القاعة تحسين تعريف من جهاتهم بالقاعدة نفسها: ما نوعه؟ وما الذي يميزه؟</p></aside>
+</section>
+
+<section class="slide" id="eight-checks" data-lo="LO3">
+  <div class="kicker">قائمة التحقق</div>
+  <h2>ثمانية بنود يجتازها كل مدخل قبل أن يُعرض للاعتماد</h2>
+  <div class="cols cols-2">
+    <ol class="bullets tight">
+      <li>اسم واحد معتمد، ومرادفاته مذكورة</li>
+      <li>جملة واحدة: النوع ثم ما يميزه</li>
+      <li>غير دائري</li>
+      <li>قاعدة الحساب أو القياس إن وجدت</li>
+    </ol>
+    <ol class="bullets tight" start="5">
+      <li>مثال، أو ما لا يدخل فيه</li>
+      <li>المالك الذي يعتمد، والمشرف الذي يصوغ</li>
+      <li>المصدر الذي أُخذ منه</li>
+      <li>الحالة: مسودة أو معتمد</li>
+    </ol>
+  </div>
+  <div class="callout note mt small"><b>القائمة أداة لا درجة.</b> المدخل الذي يجتاز الثمانية قد يظل خاطئًا في مضمونه؛ لهذا يعتمده المالك.</div>
+  <aside class="notes"><p>هذه القائمة نفسها في ملف المختبر. دليل التقييم يطلب عشرة مدخلات تجتاز قائمة تحقق. اربط البند 6 بأمس: الصياغة لمشرف الأعمال، والاعتماد للمالك.</p></aside>
+</section>
+
+<section class="slide" id="drafted-by-assistant" data-lo="LO3">
+  <div class="kicker">مدخلات يصوغها مساعد</div>
+  <h2>المساعد يكتب تعريفًا سلسًا، والسلاسة ليست دليلًا</h2>
+  <div class="cols cols-2">
+    <div class="chat">
+      <div class="msg user"><span class="who">الطلب</span>اكتب تعريف «الزيارة الطارئة» لقاموس خدمة الرعاية المنزلية.</div>
+      <div class="msg ai bad"><span class="who">المسودة</span>زيارة غير مجدولة تُطلب خلال 48 ساعة، ويعتمدها مدير تقنية المعلومات، وتشمل زيارات التطعيم الدورية.</div>
+    </div>
+    <ul class="bullets">
+      <li><b>رقم مختلف:</b> المصدر يقول 24 ساعة</li>
+      <li><b>مالك خاطئ:</b> التقنية لا تعتمد تعريفًا في الرعاية</li>
+      <li><b>خلط بين مفهومين:</b> التطعيم الدوري مجدول</li>
+    </ul>
+  </div>
+  <div class="callout warn mt small"><b>لهذا تُكتب أول المدخلات دون مساعد.</b> من لم يكتب تعريفًا بيده لا يلتقط ما ينقص في تعريف غيره.</div>
+  <aside class="notes"><p>المسودة مكتوبة لهذا المثال، وتجمع أنماط الخطأ التي يقع فيها المساعد حين لا يعطى المصدر. سياسة المقرر: المختبر 2.1 دون ذكاء اصطناعي في مدخلاتك الخمسة، ثم تراجع خمس مسودات جاهزة. في بقية المختبرات المساعد مرشد يسأل عن التعريف ولا يكتبه.</p></aside>
+</section>
+
+<section class="slide" id="correction-log" data-lo="LO3">
+  <div class="kicker">سجل التصحيحات</div>
+  <h2>كل تصحيح له سطر من المصدر يدل عليه</h2>
+  <table class="t">
+    <tr><th>المصطلح</th><th>الخطأ</th><th>الدليل من المصدر</th><th>التصحيح</th></tr>
+    <tr><td>الزيارة الطارئة</td><td>المهلة</td><td>محضر اجتماع الخدمة: «خلال 24 ساعة»</td><td>24 ساعة</td></tr>
+    <tr><td>الزيارة الطارئة</td><td>المالك</td><td>ميثاق الحوكمة: المالك مديرة الرعاية</td><td>مديرة الرعاية المنزلية</td></tr>
+    <tr><td>الزيارة الطارئة</td><td>خلط</td><td>دليل الخدمة: التطعيم زيارة مجدولة</td><td>احذف التطعيم الدوري</td></tr>
+  </table>
+  <aside class="notes"><p>السجل هو ما يجعل المراجعة قابلة للتدقيق: من يقرأه يعرف لماذا تغير كل حرف. وهو مطلوب في المقرر لكل مدخل صاغه مساعد. تصحيح بلا دليل رأي، والرأي يذهب إلى المالك لا إلى القاموس.</p></aside>
+</section>
+
+<section class="slide" id="check-glossary" data-lo="LO3">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>ما الذي ينقص هذا المدخل؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3">
+    <p class="lead">مدخل في قاموس الرعاية المنزلية: «مقدم الرعاية: الشخص الذي يقدم الرعاية للمستفيد في منزله. المالك: مديرة الرعاية. المصدر: دليل الخدمة.» أي بند من القائمة لا يجتازه؟</p>
+    <div class="opts">
+      <div class="opt" data-ok>البند الثالث: التعريف دائري</div>
+      <div class="opt" data-why="المالك مذكور، والمشرف يُستكمل؛ ليس هذا أخطر ما في المدخل">البند السادس: المالك والمشرف غير مذكورين معًا</div>
+      <div class="opt" data-why="المصدر مذكور، وهو دليل الخدمة نفسه الذي يُرجع إليه">البند السابع: المصدر غير مذكور في المدخل</div>
+      <div class="opt" data-why="ليس لكل مصطلح قاعدة حساب، ومقدم الرعاية شخص لا رقم">البند الرابع: لا قاعدة حساب للمصطلح</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> «يقدم الرعاية» تعيد كلمات المصطلح نفسه. تعريف أقوى: ممرض أو أخصائي علاج طبيعي مرخّص، مكلف بزيارات مستفيد بخطة رعاية معتمدة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. البند السادس ناقص أيضًا (لا مشرف)، فاقبل من يذكره مع الدائري، لكن الدائري هو ما يجعل المدخل بلا فائدة.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-2-1" data-auto="lab" data-lab="2.1">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>دون أي مساعد ذكاء اصطناعي في الخطوات 1 إلى 5: هذا شرط سياسة المقرر. المسودات الخمس جاهزة في drafted_entries.xlsx، فلا أحد يحتاج مساعدًا. راقب من يصحح دون دليل. التمرين الإضافي وحده يستعمل مساعدًا معتمدًا، دورًا مرشدًا.</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-1" data-label="بعد المختبر 2.1" data-lo="LO3">
+  <div class="kicker">بعد المختبر 2.1</div>
+  <h2>خمسة أخطاء في خمس مسودات، وكلها تبدو معقولة</h2>
+  <table class="t small">
+    <tr><th>المسودة</th><th>الخطأ</th><th>كيف التُقط</th></tr>
+    <tr><td>الإعانة الشهرية</td><td>حد أعلى 5,000</td><td>المصدر: 3,000 ريال</td></tr>
+    <tr><td>التابع</td><td>قيد عمر لم يقله أحد</td><td>المصدر: من أي عمر</td></tr>
+    <tr><td>التظلم</td><td>تعريف دائري</td><td>البند الثالث</td></tr>
+    <tr><td>الحساب المصرفي المعتمد</td><td>مالك خاطئ</td><td>الإدارة المالية تتحقق منه وتملكه</td></tr>
+    <tr><td>إعادة التقييم الدوري</td><td>خلط بزيارة الرعاية المنزلية</td><td>الزيارة الميدانية غير زيارة الرعاية</td></tr>
+  </table>
+  <aside class="notes"><p>من الحل المرجعي (labs/solutions/D2_1_glossary.md)، والمفتاح يتحقق منه check.py مقابل ملاحظات المصدر. اسأل: أي خطأ فات أكثركم؟ عادة قيد العمر. مع مدخلاتك الخمسة، صار عندك عشرة مدخلات، وهو ما يطلبه دليل التقييم.</p></aside>
 </section>
 
 <!-- الجلسة 2 -->
 
 <section class="slide section" id="s2" data-auto="section" data-session="2"></section>
 
-<section class="slide" id="s2-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
+<section class="slide" id="why-definitions-split" data-lo="LO3">
+  <div class="kicker">لماذا يتعارض التعريفان</div>
+  <h2>كل فريق يعرّف الكلمة بحسب القرار الذي يتخذه بها</h2>
   <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
+    <div class="card c-teal"><h4>فريق الجدولة في الرعاية</h4><p class="small mb0">«الزيارة مكتملة إذا سُجلت نتيجتها»: يحتاج أن يعرف من يُزار مرة ثانية.</p></div>
+    <div class="card c-cyan"><h4>قسم التخطيط</h4><p class="small mb0">«الزيارة مكتملة إذا مضى موعدها»: يحتاج عدد الزيارات المخطط لها في الشهر.</p></div>
   </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+  <div class="callout tip mt"><b>كلاهما محق لقراره.</b> الخطأ أن يحمل الرقمان الاسم نفسه في تقرير واحد.</div>
+  <aside class="notes"><p>لا تبدأ بالبحث عن «التعريف الصحيح». ابدأ بسؤال: أي قرار يُتخذ بهذا الرقم؟ هذا ما يجعل الخلاف قابلًا للحسم بلا غالب ومغلوب.</p></aside>
 </section>
 
-<section class="slide" id="s2-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="definition-as-condition" data-lo="LO3">
+  <div class="kicker">من الكلمة إلى الشرط</div>
+  <h2>اكتب كل تعريف شرطًا على أعمدة الجدول، ثم عُدّ</h2>
+  <div class="cols cols-2">
+    <div class="stack">
+      <p class="small"><b>تعريف الجدولة:</b> النتيجة غير فارغة</p>
+      <pre class="code s" data-file="جدول بيانات"><code>=COUNTIFS(E:E,"&lt;&gt;")</code></pre>
+      <p class="small"><b>تعريف التخطيط:</b> الموعد قبل تاريخ المرجع</p>
+      <pre class="code s" data-file="جدول بيانات"><code>=COUNTIFS(C:C,"&lt;="&amp;DATE(2026,9,30))</code></pre>
+    </div>
+    <ul class="bullets">
+      <li>تاريخ مرجع واحد ثابت لكل العد</li>
+      <li>عمود مساعد لكل تعريف: نعم أو لا</li>
+      <li>تصفية «نعم ولا» تكشف الحالات المختلفة</li>
+      <li>تحقق من الخلايا الفارغة بالتصفية، لا بالثقة في الدالة</li>
+    </ul>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <aside class="notes"><p>أعمدة المثال افتراضية لجدول زيارات الرعاية (C تاريخ الموعد، E النتيجة). في المختبر الجدول مختلف وأعمدته مختلفة. نبّه إلى الخلايا الفارغة في التواريخ: بعض البرامج تعدها صفرًا. العمود المساعد أوضح من دالة طويلة.</p></aside>
+</section>
+
+<section class="slide" id="gap-by-cause" data-lo="LO3">
+  <div class="kicker">الفرق ليس رقمًا واحدًا</div>
+  <h2>صنّف الحالات المختلفة بأسبابها، فكل سبب قرار</h2>
+  <table class="t">
+    <tr><th>المجموعة في الرعاية المنزلية</th><th>السبب</th><th>القرار الذي يكشفه</th></tr>
+    <tr><td>مضى موعدها ولا نتيجة لها</td><td>الباب لم يُفتح، أو نسي المقدم التسجيل</td><td>هل تُعاد الزيارة؟ وهل التسجيل إلزامي؟</td></tr>
+    <tr><td>لها نتيجة وموعدها لم يأت</td><td>زيارة طارئة سُجلت قبل موعدها المجدول</td><td>هل الطارئة تُعد مكتملة؟</td></tr>
+    <tr><td>لها نتيجة وتاريخ ناقص</td><td>خطأ إدخال</td><td>مشكلة جودة تُسجل</td></tr>
+  </table>
+  <aside class="notes"><p>الفرق الصافي بين رقمين يخفي مجموعتين تسيران في اتجاهين. عدّ كل اتجاه وحده. هذا بالضبط ما تطلبه الرئيسة التنفيذية في ملف المختبر.</p></aside>
+</section>
+
+<section class="slide" id="resolve-the-term" data-lo="LO3 LO2">
+  <div class="kicker">الحسم</div>
+  <h2>المالك يحسم المصطلح، والرقم الآخر يأخذ اسمًا آخر</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>1 · اعرض</b>الرقمين والمجموعات وأسبابها</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>2 · يقرر المالك</b>أي التعريفين يحمل الاسم</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>3 · سمِّ الآخر</b>«زيارة مجدولة منتهية»</div>
+    <div class="arrow">←</div>
+    <div class="step c-navy"><b>4 · أبلغ</b>من يحسب الرقم في تقاريره</div>
+  </div>
+  <div class="callout warn mt"><b>أين يقع الخطأ.</b> أن يختار المحلل التعريف بنفسه، أو أن يجمع المدخل التعريفين في جملة واحدة «أو». لا يُحسم شيء هكذا.</div>
+  <aside class="notes"><p>إذا اختلف مالكان على مصطلح يتقاسمانه، يرفعه الرئيس التنفيذي للبيانات إلى اللجنة. في المختبر المصطلح داخل مجال واحد، فيحسمه مالكه.</p></aside>
+</section>
+
+<section class="slide" id="term-dispute-cost" data-lo="LO3">
+  <div class="kicker">لماذا يستحق الوقت</div>
+  <h2>المصطلح غير المحسوم يكلّف في كل اجتماع</h2>
+  <ul class="bullets">
+    <li>وقت يضيع في التوفيق بين رقمين في كل تقرير</li>
+    <li>قرار يُتخذ على رقم لا يعني ما يظنه صاحبه</li>
+    <li>ثقة تضعف في كل أرقام الجهة بعد أول تناقض علني</li>
+    <li>مبدأ «بيانات موثوقة» في الضوابط الوطنية: جودة عالية، أو شفافية عن مستواها</li>
+  </ul>
+  <aside class="notes"><p>اربط بقصة مَعين: رقمان في اجتماع واحد. هذا ما دفع الهيئة إلى إنشاء المكتب. المصادر: الضوابط الوطنية، القسم 5، مبدأ البيانات الموثوقة.</p></aside>
+</section>
+
+<section class="slide" id="check-two-definitions" data-lo="LO3">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>الرقمان مختلفان. ما الخطوة التالية؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3">
+    <p class="lead">عددتَ «الزيارات المكتملة» بتعريفين في الرعاية المنزلية وحصلت على رقمين. ما أنفع ما تقدمه لمديرة الرعاية قبل أن تقرر؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يخفي اتجاهين متعاكسين في رقم صافٍ واحد">الفرق الصافي بين الرقمين مع نسبته المئوية</div>
+      <div class="opt" data-why="يقرر بدل المالك، فيحسم المحلل ما يعود إلى صاحب القرار">التعريف الأصح في رأيك مع تبريره المكتوب</div>
+      <div class="opt" data-why="الحل الوسط يصنع رقمًا ثالثًا لا يخدم أي قرار">متوسط الرقمين حلًّا وسطًا بين الفريقين</div>
+      <div class="opt" data-ok>المجموعات المختلفة وعددها وسبب كل منها</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> كل مجموعة تكشف قرارًا (هل الطارئة مكتملة؟ هل التسجيل إلزامي؟). المالكة تحسم بها المصطلح، لا بالفرق الصافي.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: د. من اختار «ب» يفعل ما يغري به المحلل الجيد، لكنه ليس قراره.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-2-2" data-auto="lab" data-lab="2.2">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>البداية من families.xlsx وdefinitions_note.txt. 600 أسرة بلا أسماء: لاحظ معهم أن العد لا يحتاج اسمًا، وهذا مبدأ الحد الأدنى. لا تذكر الرقم المنشور هنا؛ يكتشفونه في 2.3. راقب الخلايا الفارغة في تاريخ آخر صرف.</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-2" data-label="بعد المختبر 2.2" data-lo="LO3">
+  <div class="kicker">بعد المختبر 2.2</div>
+  <h2>413 بالصرف، و420 بالحالة، و383 بالاثنين</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>صُرف لها وليست «مقبول»: 30</h4><p class="small mb0">22 موقوفة و8 مغلقة: صُرف لها في يوليو أو أغسطس ثم تغيرت حالتها.</p></div>
+    <div class="card c-coral"><h4>«مقبول» ولم يُصرف لها: 37</h4><p class="small mb0">28 قُبلت في سبتمبر ولم تصلها دفعة، و9 توقف صرفها قبل يوليو: سؤال للإدارة المالية.</p></div>
+  </div>
+  <div class="callout tip mt small"><b>المدخل المرجعي.</b> «مستفيد نشط»: أسرة صُرفت لها إعانة خلال الأشهر الثلاثة السابقة لتاريخ المرجع. والأخرى «أسرة مقبولة». يعتمده مدير البرنامج.</div>
+  <aside class="notes"><p>الأرقام من تشغيل check.py 2.2 على families.xlsx. يُقبل اختيار تعريف الحالة إذا سُمّي الآخر وذُكر المعتمِد. التسعة المتوقف صرفها هي أهم اكتشاف: ليست مشكلة تعريف بل مشكلة صرف.</p></aside>
 </section>
 
 <!-- الجلسة 3 -->
 
 <section class="slide section" id="s3" data-auto="section" data-session="3"></section>
 
-<section class="slide" id="s3-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
+<section class="slide" id="lineage-answers" data-lo="LO3">
+  <div class="kicker">تتبع أصل البيانات</div>
+  <h2>المخطط يجيب: من أين جاء الرقم، وما الذي تغيّر في طريقه</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>من أين</h4><p class="small mb0">النظام والجدول والنموذج الذي وُلدت فيه البيانات.</p></div>
+    <div class="card c-cyan"><h4>ما الذي تغيّر</h4><p class="small mb0">كل تصفية وعدّ وحذف ودمج بين المصدر والتقرير.</p></div>
+    <div class="card c-purple"><h4>من لمسه</h4><p class="small mb0">كل نظام ومهمة وشخص مرّ الرقم به.</p></div>
   </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+  <div class="callout note mt small"><b>متى تحتاجه.</b> حين يُسأل «لماذا هذا الرقم؟»، وقبل تغيير عمود يعتمد عليه تقرير.</div>
+  <aside class="notes"><p>تتبع الأصل على مستوى الأعمدة وآليًا من الأنظمة موضوع مقرر LDS-DMG-202. هنا مخطط يدوي لمجموعة بيانات واحدة: أول مخرج عمل للمجال، ويطلبه دليل التقييم.</p></aside>
 </section>
 
-<section class="slide" id="s3-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
+<section class="slide" id="copy-or-transform" data-lo="LO3">
+  <div class="kicker">محطات وأسهم</div>
+  <h2>كل سهم نسخ أو تحويل، والتحويل يُكتب عليه</h2>
+  <table class="t">
+    <tr><th>على السهم</th><th>يعني</th><th>مثال من الرعاية المنزلية</th></tr>
+    <tr><td><b>نسخ</b></td><td>البيانات تصل كما هي</td><td>النسخ الليلي من نظام الرعاية إلى المستودع</td></tr>
+    <tr><td><b>تحويل: تصفية</b></td><td>بعض الصفوف تسقط</td><td>زيارات الشهر الماضي فقط</td></tr>
+    <tr><td><b>تحويل: عدّ أو جمع</b></td><td>صفوف تصير رقمًا</td><td>عدد الزيارات لكل حي</td></tr>
+    <tr><td><b>تحويل: تعديل يدوي</b></td><td>شخص يغيّر شيئًا</td><td>حذف زيارات تجريبية من ملف التقرير</td></tr>
+  </table>
+  <aside class="notes"><p>اطلب من القاعة: أي سهم في جهاتكم لا يعرف أحد ما يحدث عليه؟ الجواب غالبًا ملف جدول بيانات على جهاز موظف.</p></aside>
+</section>
+
+<section class="slide" id="home-care-lineage" data-lo="LO3" data-read="scaled">
+  <div class="kicker">مثال كامل</div>
+  <h2>عدد الزيارات في التقرير الشهري للوزارة، من الجهاز اللوحي إلى الخطاب</h2>
   <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+    <div class="step c-teal"><b>الجهاز اللوحي</b>الممرضة تسجّل الزيارة</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>نظام الرعاية</b>جدول <span class="ltr">home_visits</span></div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>المستودع</b>نسخ ليلي</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>لوحة الخدمة</b>عدّ حسب الحي</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>ملف المنسقة</b>تعديل يدوي</div>
+    <div class="arrow">←</div>
+    <div class="step c-navy"><b>خطاب الوزارة</b>الرقم الشهري</div>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <div class="callout warn mt"><b>المحطة الحمراء.</b> ملف على جهاز المنسقة لا يظهر في أي نظام، وهو الذي يغيّر الرقم.</div>
+  <aside class="notes"><p>المثال افتراضي من الرعاية المنزلية. اسأل: لو سألت الوزارة لماذا انخفض الرقم، من يعرف الجواب؟ المنسقة وحدها. المخطط يجعل الخطوة مرئية حتى يقرر أحد هل تبقى، وأين توثق.</p></aside>
+</section>
+
+<section class="slide" id="manual-steps-count" data-lo="LO3">
+  <div class="kicker">أين يقع الخطأ</div>
+  <h2>الخطوة اليدوية جزء من المسار، ولو لم تكن في أي نظام</h2>
+  <ul class="bullets">
+    <li>من يرسم الأنظمة وحدها يرسم مسارًا لا ينتج الرقم المنشور</li>
+    <li>اسأل من ينقل الرقم الأخير: ماذا تفعل قبل أن تنقله؟</li>
+    <li>أعد حساب الرقم من المصدر بالتحويلات التي رسمتها: إن لم يطابق، فالمخطط ناقص</li>
+  </ul>
+  <div class="callout tip mt"><b>اختبار المخطط.</b> مخطط صحيح يعيد إنتاج الرقم المنشور من بيانات المصدر.</div>
+  <aside class="notes"><p>هذا هو الاختبار الذي يطلبه المختبر في الخطوة 4. المخطط ليس رسمًا جميلًا؛ هو حساب يمكن إعادته.</p></aside>
+</section>
+
+<section class="slide" id="diagram-conventions" data-lo="LO3">
+  <div class="kicker">كيف ترسم</div>
+  <h2>أربع قواعد تكفي لمخطط يقرؤه غيرك</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>اتجاه واحد</h4><p class="small mb0">من المصدر إلى التقرير، في اتجاه القراءة.</p></div>
+    <div class="card c-cyan"><h4>صندوق لكل محطة</h4><p class="small mb0">اسم بلغة العمل، والنظام والجدول تحته.</p></div>
+    <div class="card c-purple"><h4>كلمة على كل سهم</h4><p class="small mb0">نسخ، أو التحويل باختصار.</p></div>
+    <div class="card c-coral"><h4>لون لما لا يوثَّق</h4><p class="small mb0">ما لا يعرفه إلا شخص واحد يظهر بلون آخر.</p></div>
+  </div>
+  <aside class="notes"><p>الأدوات أمثلة: draw.io أو Excalidraw أو ورقة وقلم. لا تقضِ وقت المختبر في التنسيق: صندوق ونص وسهم.</p></aside>
+</section>
+
+<section class="slide" id="check-lineage" data-lo="LO3">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>المخطط لا يعيد الرقم المنشور</h2>
+  <div class="quiz" data-type="single" data-lo="LO3">
+    <p class="lead">رسمت مسار عدد زيارات الرعاية من النظام إلى خطاب الوزارة، وأعدت الحساب بتحويلاته، فخرج رقم أكبر من المنشور. ما أرجح تفسير؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يفترض خطأ النظام قبل أن يتحقق من اكتمال المخطط">النظام يحسب الزيارات خطأ ويجب إصلاحه</div>
+      <div class="opt" data-ok>في المسار خطوة لم تُرسم تحذف صفوفًا</div>
+      <div class="opt" data-why="النسخ الليلي ينقل البيانات كما هي ولا يغيّر عددها">النسخ الليلي إلى المستودع يُسقط بعض الصفوف</div>
+      <div class="opt" data-why="يقبل الفرق دون تفسير، والمخطط المطلوب يعيد الرقم بالضبط">الفرق صغير ويمكن إهماله في التقرير الشهري</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> المنشور أصغر: شيء حذف صفوفًا بعد آخر محطة رسمتها. ابحث عمّن ينقل الرقم الأخير.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ب. هذا ما سيحدث في المختبر. لا تقل أكثر.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-2-3" data-auto="lab" data-lab="2.3">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>الملفات في labs/files/lineage/. لا يحتاج المختبر نتيجة 2.2؛ يعيد الحساب من families.xlsx مباشرة. راقب من يسقط ملف المحللة لأنه «ليس نظامًا».</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-3" data-label="بعد المختبر 2.3" data-lo="LO3">
+  <div class="kicker">بعد المختبر 2.3</div>
+  <h2>المنشور 408 = 420 طلبًا مقبولًا ناقص 12 حُذفت باليد</h2>
+  <div class="cols cols-3">
+    <div class="stat"><div class="big">8</div><div class="lbl">محطات من نموذج الطلب إلى التقرير</div></div>
+    <div class="stat"><div class="big">2</div><div class="lbl">تحويلان: تصفية «مقبول»، وحذف يدوي غير موثق</div></div>
+    <div class="stat"><div class="big">0</div><div class="lbl">من التعريفين في المختبر 2.2 يطابق الرقم المنشور</div></div>
+  </div>
+  <div class="callout warn mt small"><b>ما تعلمته الهيئة.</b> التقرير يسمي «نشطة» ما يعدّه تعريف الحالة، ثم يحذف منه ما لا يعرفه أحد. الحل: تعريف معتمد، وخطوة موثقة في المستودع.</div>
+  <aside class="notes"><p>من تشغيل check.py 2.3: الرقم في المقتطف يساوي عدد «مقبول» في families.xlsx ناقص الأسر الاثنتي عشرة في رسالة المحللة. اربط بـ 2.2: الآن يعرف الجميع لماذا لم يطابق أي من رقميهم.</p></aside>
 </section>
 
 <!-- الجلسة 4 -->
 
 <section class="slide section" id="s4" data-auto="section" data-session="4"></section>
 
-<section class="slide" id="s4-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
+<section class="slide" id="three-kinds-metadata" data-lo="LO3 LO1">
+  <div class="kicker">البيانات الوصفية</div>
+  <h2>ثلاثة أنواع من البيانات الوصفية، ولكل منها من يعرفه</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>للأعمال</h4><p class="small mb0">الاسم الذي يفهمه الناس، والوصف، والمالك، والمصطلح، والتصنيف. يكتبها إنسان.</p></div>
+    <div class="card c-cyan"><h4>فنية</h4><p class="small mb0">الأعمدة وأنواعها، والنظام المصدر، والمحطات السابقة. تعرفها الأنظمة.</p></div>
+    <div class="card c-purple"><h4>تشغيلية</h4><p class="small mb0">عدد السجلات، وآخر تحديث، ونسبة الاكتمال. تتغير كل يوم.</p></div>
   </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+  <aside class="notes"><p>اطلب مثالًا من سجل الزيارات في الرعاية لكل نوع: «زيارة مكتملة» مصطلح للأعمال، والعمود visit_status فني، وعدد زيارات أمس تشغيلي.</p></aside>
 </section>
 
-<section class="slide" id="s4-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="harvest-or-write" data-lo="LO3">
+  <div class="kicker">آلي أم إنسان</div>
+  <h2>الأداة تسحب ما في الأنظمة، ولا تعرف من يقرر</h2>
+  <table class="t">
+    <tr><th>في مدخل «سجل الزيارات»</th><th>تسحبه الأداة</th><th>يكتبه إنسان</th></tr>
+    <tr><td>أعمدة الجدول وأنواعها</td><td>نعم</td><td></td></tr>
+    <tr><td>عدد السجلات وآخر تحديث</td><td>نعم</td><td></td></tr>
+    <tr><td>المالك</td><td></td><td>مديرة الرعاية تؤكده</td></tr>
+    <tr><td>مستوى التصنيف</td><td></td><td>المالكة تعتمده</td></tr>
+    <tr><td>مصطلح «زيارة مكتملة»</td><td></td><td>مشرف الأعمال يربطه</td></tr>
+  </table>
+  <aside class="notes"><p>بعض الأدوات تقترح وصفًا أو تصنيفًا آليًا بنموذج لغوي؛ الاقتراح يحتاج مراجعة مشرف، وقياس خطأ هذه الاقتراحات موضوع LDS-DMG-202. في هذا المقرر: ما يحتاج قرارًا يكتبه إنسان.</p></aside>
+</section>
+
+<section class="slide" id="catalogue-demo" data-lo="LO3 LO1">
+  <div class="kicker">عرض المدرب</div>
+  <h2>كتالوج مفتوح المصدر: ما تراه في خمس دقائق</h2>
+  <div class="cols cols-2">
+    <ol class="bullets tight">
+      <li>البحث عن جدول باسمه أو بمصطلح</li>
+      <li>صفحة الجدول: الأعمدة والعدد المسحوبة آليًا</li>
+      <li>الحقول الفارغة: المالك والوصف والتصنيف</li>
+      <li>مخطط تتبع الأصل إن وُصلت الأداة بالمسار</li>
+    </ol>
+    <div class="card c-navy"><h4>أمثلة على الأداة</h4><p class="small mb0"><span class="en">OpenMetadata</span> أو <span class="en">DataHub</span>: كلاهما مفتوح المصدر وله توثيق رسمي وبيئة تجريبية. الأسماء أمثلة لا توصيات.</p></div>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <aside class="notes"><p>العرض لم يُجرَّب عند بناء المقرر، ولا يحتاجه المختبر. قبل الدفعة: جرّب البيئة التجريبية للأداة التي تختارها، أو اعرض صفحات التوثيق الرسمية (docs.open-metadata.org، datahub.com). لا تعرض بيانات جهة حقيقية. أسماء المنتجات وواجهاتها تتغير: تحقق منها في الشهر نفسه.</p><p>المصادر: OpenMetadata documentation؛ DataHub.</p></aside>
+</section>
+
+<section class="slide" id="catalogue-single-reference" data-lo="LO1 LO3">
+  <div class="kicker">في المعيار الوطني</div>
+  <h2>الكتالوج مرجع واحد للبيانات الوصفية، والسجل طريقه إليه</h2>
+  <ul class="bullets">
+    <li>مجال البيانات الوصفية ودليل البيانات: وصول إلى بيانات وصفية متكاملة عبر أداة كتالوج هي المرجع الواحد للجهة</li>
+    <li>الترتيب العملي: سجل يملؤه الناس، ثم أداة تسحب ما يمكن سحبه، ثم مراجعة دورية لما بقي فارغًا</li>
+    <li>مشرف الأعمال يُسند إلى كل أصل في الكتالوج</li>
+  </ul>
+  <aside class="notes"><p>الضوابط الوطنية تصف المجال الثاني بهذا المعنى، وتطلب في ضوابطه إسناد مشرفي بيانات إلى البيانات الوصفية المسجلة. إعادة صياغة، لا اقتباس.</p><p>المصادر: الضوابط الوطنية، القسم 6 ومجال البيانات الوصفية.</p></aside>
+</section>
+
+<section class="slide" id="empty-catalogue" data-lo="LO3">
+  <div class="kicker">أين يقع الخطأ</div>
+  <h2>كتالوج ممتلئ بالأعمدة وفارغ من المعنى لا يستخدمه أحد</h2>
+  <div class="cols cols-2">
+    <div class="card flat c-coral"><h4>ما يحدث</h4><p class="small mb0">تُشترى أداة، وتُسحب آلاف الجداول، ولا مالك ولا وصف ولا مصطلح لأي منها. يبحث الموظف، فيجد أسماء جداول لا يفهمها، ويعود إلى سؤال زميله.</p></div>
+    <div class="card flat c-teal"><h4>ما ينفع</h4><p class="small mb0">ابدأ بأصول مجال واحد مسجلة بملاكها، وأدخلها الأداة، وقس كل شهر كم حقلًا للأعمال ما زال فارغًا.</p></div>
+  </div>
+  <aside class="notes"><p>هذا من الأنماط المعروفة في المجال: الأداة قبل الملكية. اسأل القاعة: هل اشترت جهاتكم أداة قبل أن تعرف من يملأ حقولها؟</p></aside>
+</section>
+
+<section class="slide" id="check-metadata" data-lo="LO3">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>من يملأ هذا الحقل؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3">
+    <p class="lead">في مدخل كتالوج «سجل الزيارات» في الرعاية المنزلية، حقل «دورية التحديث المتفق عليها: يومي». من أين يأتي؟</p>
+    <div class="opts">
+      <div class="opt" data-why="الأداة ترى متى حُدّث الجدول، لا ما اتُّفق عليه">تسحبه الأداة من تاريخ آخر تحديث</div>
+      <div class="opt" data-why="يخلط بين بيانات الأعمال والتشغيل: الحقل عن حال البيانات لا عن معناها">يكتبه مشرف الأعمال مع تعريف المصطلح</div>
+      <div class="opt" data-ok>يكتبه إنسان بعد اتفاق مع المالك</div>
+      <div class="opt" data-why="المشرف الفني يعرف مهمة النسخ، لا ما وعد به العمل">يستنتجه المشرف الفني من جدول مهام النظام</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الدورية المتفق عليها وعد، والوعد قرار. الأداة تقيس الواقع (آخر تحديث)، والفرق بينهما مشكلة جودة في بُعد الآنية.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. هذا الحقل الذي يختلف عليه أكثر المشاركين في المختبر، فاعرض الفرق بين الوعد والواقع.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-2-4" data-auto="lab" data-lab="2.4">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>البداية من register_start.xlsx، لا من سجل المشارك. الأصول الثلاثة: A-02 الأسر، وA-09 المدفوعات، وA-13 المؤشرات المنشورة. التمرين الإضافي هو العرض الحي إن كان متاحًا.</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-4" data-label="بعد المختبر 2.4" data-lo="LO3">
+  <div class="kicker">بعد المختبر 2.4</div>
+  <h2>ستة حقول تسحبها الأداة، وثمانية تنتظر إنسانًا</h2>
+  <div class="bars">
+    <div class="row"><span>للأعمال</span><div class="bar c-teal" style="--w:100%"></div><span class="val">7</span></div>
+    <div class="row"><span>تشغيلية</span><div class="bar c-purple" style="--w:57%"></div><span class="val">4</span></div>
+    <div class="row"><span>فنية</span><div class="bar c-cyan" style="--w:43%"></div><span class="val">3</span></div>
+  </div>
+  <div class="callout note mt small"><b>والمدفوعات.</b> بلا مشرف من جهة الأعمال، ومالكها «قيد التأكيد»: الكتالوج يكشف ما لم يحسمه السجل.</div>
+  <aside class="notes"><p>من تشغيل check.py 2.4 وlabs/solutions/D2_4_catalogue.md. لا حقل آلي من بيانات الأعمال: هذه قاعدة يتحقق منها الحل.</p></aside>
 </section>
 
 <section class="slide" id="wrap-up">
   <div class="kicker">خلاصة اليوم 2</div>
   <h2>ثلاثة أمور تبقى معك</h2>
   <div class="cols cols-3">
-    <div class="card c-teal"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
-    <div class="card c-coral"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
-    <div class="card c-purple"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
+    <div class="card c-teal"><h4>التعريف شرط يُعد</h4><p class="small mb0">نوع ثم ما يميزه، وقاعدة حساب، ومالك يعتمد. ما لا يُعد لا يحسم شيئًا.</p></div>
+    <div class="card c-coral"><h4>المسودة تحتاج دليلًا</h4><p class="small mb0">مدخل سلس من مساعد يُراجع سطرًا سطرًا، وكل تصحيح له مصدر.</p></div>
+    <div class="card c-purple"><h4>المخطط يعيد الرقم</h4><p class="small mb0">مسار لا يعيد إنتاج الرقم المنشور مسار ناقص، والناقص غالبًا ملف على جهاز.</p></div>
   </div>
+  <aside class="notes"><p>اسأل: أي رقم في جهاتكم تريدون أن تتتبعوا أصله غدًا؟ هذا من أفضل موضوعات مهمة المتابعة.</p></aside>
 </section>
 
 <section class="slide dark" id="next" data-label="التالي">
-  <div class="kicker">التالي</div>
-  <h2>اليوم 3: REPLACE: موضوع هذه الوحدة في كلمات قليلة</h2>
-  <p class="lead">REPLACE: ما يجهزه المشاركون قبل ذلك، والمختبرات غير المكتملة يمكن إكمالها في المنزل</p>
-  <aside class="notes">REPLACE: الحسابات أو التثبيتات أو القراءة التي يحتاجها المشاركون قبل الوحدة التالية</aside>
+  <div class="kicker">غدًا · اليوم 3</div>
+  <h2>الحماية والجودة والقياس</h2>
+  <p class="lead">مستويات تصنيف مبدئية لخمسة عشر أصلًا، وقياس ثلاثة جداول، وستة طلبات على مكتب البيانات، ولقطة نضج من عشرين وثيقة تبدأ بها المشروع الختامي.</p>
+  <aside class="notes"><p>لا تحضير غير قراءة موجز سياسة التصنيف في ملف classification_guide.txt إن أراد أحد أن يسبق. المختبرات غير المكتملة تُكمل من ملفاتها.</p></aside>
 </section>
