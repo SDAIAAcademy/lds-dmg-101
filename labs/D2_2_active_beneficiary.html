@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.2 · من هو «المستفيد النشط»؟ · أسس إدارة البيانات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_2_active_beneficiary.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-2">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.2</span>
+<h1>من هو «المستفيد النشط»؟</h1>
+<p>التوفيق بين تعريفين لمصطلح «مستفيد نشط».</p>
+<div class="meta"><span>35 دقيقة</span><span>اليوم 2</span><span>الجلسة 2: مصطلح واحد ومعنيان</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.2">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>عدد الأسر «النشطة» بكل تعريف من التعريفين، وقائمة بالأسر التي يختلف فيها التعريفان مع سبب كل مجموعة.</li>
+    <li>مدخل قاموس واحد يحسم مصطلح «مستفيد نشط» ويسمّي من يعتمده ومن يُبلَّغ به.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/families.xlsx" download><b>families.xlsx</b><span>600 أسرة اصطناعية بلا أسماء ولا هويات: الحالة، وتاريخ القبول، وتاريخ آخر صرف، وتاريخ الإغلاق.</span></a>
+  <a href="files/definitions_note.txt" target="_blank"><b>definitions_note.txt</b><span>التعريفان كما وردا في البريد، وسؤال الرئيسة التنفيذية للبيانات.</span></a>
+</div>
+<p class="small">جدول بيانات بدالة COUNTIFS وتصفية. الذكاء الاصطناعي مرشد: يجوز أن تسأل مساعدًا معتمدًا عن صيغة دالة، لا أن ترفع إليه الملف ليعدّ عنك.</p>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · التعريفان والسؤال <span class="min">4 د</span></h3>
+  <p>اقرأ التعريفين، واكتب كلًّا منهما شرطًا على أعمدة الجدول. تاريخ المرجع 2026-09-30، والأشهر الثلاثة تبدأ في 2026-07-01.</p>
+</div>
+
+<div class="step">
+  <h3>2 · عدّ بكل تعريف <span class="min">10 د</span></h3>
+  <p>أضف عمودين: «نشط بالصرف» (نعم إذا كان تاريخ آخر صرف 2026-07-01 أو بعده) و«نشط بالحالة» (نعم إذا كانت الحالة مقبول). عدّ كلًّا منهما.</p>
+  <div class="prompt" data-tool="جدول بيانات">=COUNTIFS(F:F,"&gt;="&amp;DATE(2026,7,1))</div>
+</div>
+
+<div class="step">
+  <h3>3 · أين يختلفان ولماذا <span class="min">10 د</span></h3>
+  <p>صفِّ الأسر التي «نعم» في عمود و«لا» في الآخر. صنّفها بالحالة وبتاريخ القبول. كل مجموعة سبب: اكتب السبب بجملة.</p>
+  <table>
+    <tr><th>المجموعة</th><th>عدد الأسر</th><th>السبب</th></tr>
+    <tr><td class="fill">صُرف لها وحالتها ليست مقبول</td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td class="fill">مقبول ولم يُصرف لها</td><td class="fill"></td><td class="fill"></td></tr>
+  </table>
+</div>
+
+<div class="step">
+  <h3>4 · مدخل يحسم المصطلح <span class="min">8 د</span></h3>
+  <p>اكتب المدخل: التعريف، وقاعدة الحساب بتاريخ المرجع، وما لا يدخل فيه واسمه البديل، والمالك والمشرف، والحالة. لا تجمع التعريفين في جملة واحدة.</p>
+</div>
+
+<div class="step">
+  <h3>5 · من يعتمد ومن يُبلَّغ <span class="min">3 د</span></h3>
+  <p>سمّ صاحب الاعتماد من الميثاق، ومن يجب أن يغيّر حسابه بعد الاعتماد.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>اقترح اسمين مقيدين للرقمين حتى لا يُخلط بينهما في التقارير.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم أسرة بكل تعريف، وكم أسرة يعدّها التعريفان معًا؟</li>
+  <li>ما المجموعة التي تستحق سؤال الإدارة المالية، ولماذا؟</li>
+  <li>من يعتمد المدخل في ميثاق مَعين؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>الأرقام في <code>labs/solutions/D2_2_active_beneficiary.md</code> ومن تشغيل <code>check.py 2.2</code>: 413 بالصرف، و420 بالحالة، و383 بالتعريفين.</li>
+    <li>صُرف لها وليست مقبول: 30 (22 موقوفة، و8 مغلقة). مقبول ولم يُصرف لها: 37 (28 قُبلت في سبتمبر، و9 توقف صرفها قبل يوليو).</li>
+    <li>الخطأ الشائع: عدّ الخلايا الفارغة في تاريخ الصرف بشرط «&lt;» فيدخل الفارغ أو يخرج بحسب البرنامج. اطلب من المشاركين التحقق بالتصفية.</li>
+    <li>لا تذكر الرقم المنشور (408) هنا: يكتشفه المشاركون في المختبر 2.3.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D2_1_glossary.html" rel="prev">→ المختبر السابق</a><a href="D2_3_lineage.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · أسس إدارة البيانات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع 87991cf</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T22:00:29Z","version":"2027.1.0","commit":"87991cf"},"course":{"id":"lds-dmg-101","code":"LDS-DMG-101","title":"أسس إدارة البيانات","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-dmg-101/","repo":"SDAIAAcademy/lds-dmg-101","home":"../index.html"},"lab":{"id":"2.2","title":"من هو «المستفيد النشط»؟","summary":"التوفيق بين تعريفين لمصطلح «مستفيد نشط».","minutes":35,"day":2,"unit":"اليوم 2","session":2,"deck":"../slides/day2.html#lab-2-2","prev":"D2_1_glossary.html","next":"D2_3_lineage.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

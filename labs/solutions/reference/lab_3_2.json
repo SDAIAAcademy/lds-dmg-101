@@ -1,0 +1,24 @@
+{
+ "families_sample": {
+  "rows": 200,
+  "mobile_complete": 177,
+  "mobile_valid_of_filled": 177,
+  "id_complete": 200,
+  "id_valid": 193,
+  "region_valid": 196,
+  "level": "مقيد"
+ },
+ "payments_q3": {
+  "rows": 300,
+  "date_complete": 295,
+  "amount_valid": 295,
+  "level": "سري"
+ },
+ "eligibility_visits": {
+  "rows": 150,
+  "outcome_complete": 138,
+  "outcome_valid_of_filled": 132,
+  "date_valid": 148,
+  "level": "سري"
+ }
+}

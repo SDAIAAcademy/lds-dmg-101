@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="deck" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اليوم 2 · المعنى والمسار · أسس إدارة البيانات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="day2.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<div class="deck" data-course="أسس إدارة البيانات" data-track="executives" data-day="اليوم 2">
+<section class="slide title" id="title" data-auto="title" data-label="الترحيب" data-n="1">
+  <div class="kicker">أكاديمية سدايا · أسس إدارة البيانات</div>
+  <h1>المعنى والمسار</h1>
+  <p class="lead mt">اليوم 2: قاموس المصطلحات، وحسم التعريفات المتعارضة، وتتبع أصل الرقم المنشور، والانتقال من السجل إلى الكتالوج</p>
+  <div class="meta"><span class="track">مسار التنفيذيين والقادة</span><span>3 أيام تدريبية + يوم للمشروع الختامي</span><span>4 جلسات · 4 مختبرات</span><span>LDS-DMG-101</span></div>
+  <aside class="notes"><p>ابدأ بسؤال: من سمع في اجتماع رقمين مختلفين للشيء نفسه؟ اليوم نعرف من أين يأتي ذلك: من كلمة بلا تعريف، أو من رقم بلا مسار. كل الأيام تبدأ من ملفات جاهزة؛ اليوم يبدأ الجميع من السجل المرجعي لا من سجلاتهم.</p></aside>
+</section>
+
+<section class="slide" id="agenda" data-auto="agenda" data-label="جدول اليوم" data-n="2">
+  <div class="kicker">اليوم</div>
+  <h2>المعنى والمسار</h2>
+  <div class="agenda"><div class="item"><div><b>الجلسة 1 · قاموس الأعمال وقاموس البيانات</b><small>قاموس مصطلحات الأعمال مقابل قاموس البيانات، وتشريح المدخل الجيد، وقائمة تحقق</small></div></div><div class="item"><div><b>الجلسة 2 · مصطلح واحد ومعنيان</b><small>لماذا تتعارض التعريفات، وكيف تعدّ بكل تعريف، وكيف يحسم المالك المصطلح</small></div></div><div class="item"><div><b>الجلسة 3 · تتبع أصل البيانات</b><small>مخطط تتبع الأصل: المحطات والتحويلات والخطوات اليدوية، وكيف يُرسم ويُقرأ</small></div></div><div class="item"><div><b>الجلسة 4 · من السجل إلى الكتالوج</b><small>البيانات الوصفية للأعمال والفنية والتشغيلية، وما تسحبه أداة الكتالوج وما يكتبه إنسان</small></div></div></div>
+  <aside class="notes"><p>أربع جلسات: القاموس، والتعريف المتعارض، وتتبع الأصل، والكتالوج. المختبر الأول دون أي مساعد ذكاء اصطناعي. الاستراحات بزر B.</p></aside>
+</section>
+
+<section class="slide" id="check-review-day1" data-lo="LO2" data-n="3">
+  <div class="kicker">مراجعة أمس</div>
+  <h2>قرار بلا صاحب</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-review-day1-q1">
+    <p class="lead">في المراكز المجتمعية، طلب مدرب قائمة المشتركين بأرقام جوالاتهم. أعدّ المنسق القائمة، وينتظر المشرف الفني من يقول له «أرسل». من يقول ذلك؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يخلط بين من أعدّ القائمة ومن يملك قرار مشاركتها" data-k="أ">المنسق، لأنه أعدّ القائمة وراجع أسماءها</div>
+      <div class="opt" data-why="يرفع كل قرار إلى الرئيس التنفيذي، وهو يقود المكتب ولا يملك بيانات المجال" data-k="ب">الرئيس التنفيذي للبيانات</div>
+      <div class="opt" data-ok data-k="ج">مالك بيانات المراكز المجتمعية</div>
+      <div class="opt" data-why="يظن أن من يرسل الملف يقرر إرساله: المشرف ينفذ بعد الموافقة" data-k="د">المشرف الفني نفسه، لأنه من سيرسل الملف</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> مشاركة بيانات مجال قرار يعتمده مالكه. المنسق أعدّ، والمشرف الفني سينفذ.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. دقيقة واحدة. إن اختار أحد «د»، أعد قاعدة الأمس: من يقرر ليس من ينفذ.</p></aside>
+</section>
+
+<!-- الجلسة 1 -->
+
+<section class="slide section" id="s1" data-auto="section" data-session="1" data-n="4">
+  <div class="kicker">الجلسة 1</div>
+  <h1>قاموس الأعمال وقاموس البيانات</h1>
+  <ul class="bullets outcomes"><li>تفرّق بين قاموس مصطلحات الأعمال وقاموس البيانات</li><li>تكتب مدخلًا يجتاز قائمة تحقق من ثمانية بنود</li><li>تراجع مدخلًا صاغه مساعد مقابل المصدر وتسجّل التصحيح</li></ul>
+  <div class="sess-no">01</div>
+</section>
+
+<section class="slide" id="glossary-vs-dictionary" data-lo="LO3" data-n="5" data-session="1">
+  <div class="kicker">قاموسان لا قاموس واحد</div>
+  <h2>قاموس الأعمال يعرّف الكلمة، وقاموس البيانات يصف العمود</h2>
+  <table class="t">
+    <tr><th></th><th>قاموس مصطلحات الأعمال</th><th>قاموس البيانات</th></tr>
+    <tr><td>يجيب عن</td><td>ماذا نعني بـ«زيارة مكتملة»؟</td><td>ما في العمود <span class="ltr">visit_status</span>، وما قيمه المسموحة؟</td></tr>
+    <tr><td>يكتبه</td><td>مشرف الأعمال، ويعتمده المالك</td><td>المشرف الفني من النظام</td></tr>
+    <tr><td>يقرؤه</td><td>المدير والمحلل والجمهور</td><td>المحلل والمطور</td></tr>
+    <tr><td>يتغير حين</td><td>يتغير قرار في العمل</td><td>يتغير النظام</td></tr>
+  </table>
+  <div class="callout tip mt small"><b>الربط.</b> العمود <span class="ltr">visit_status</span> يشير إلى المصطلح «زيارة مكتملة». بلا هذا الربط، يحسب كل محلل الزيارة المكتملة بطريقته.</div>
+  <aside class="notes"><p>الأمثلة من خدمة الرعاية المنزلية. اسأل: أيهما يوجد في جهاتكم؟ غالبًا قاموس بيانات في وثيقة النظام، ولا قاموس أعمال. المختبر يبدأ بقاموس الأعمال لأنه الأصعب والأهم لصاحب القرار.</p></aside>
+</section>
+
+<section class="slide" id="anatomy-of-an-entry" data-lo="LO3" data-n="6" data-session="1">
+  <div class="kicker">تشريح المدخل</div>
+  <h2>المدخل الجيد يقول ما الشيء، وكيف يُعد، ومن يعتمده</h2>
+  <div class="cols cols-2">
+    <div class="card tint c-navy">
+      <h4>زيارة مكتملة</h4>
+      <p class="small"><b>التعريف:</b> زيارة رعاية منزلية حضرها مقدم الرعاية في المنزل وسجّل نتيجتها في النظام في اليوم نفسه.</p>
+      <p class="small"><b>قاعدة العد:</b> لها تاريخ حضور ونتيجة غير فارغة.</p>
+      <p class="small"><b>لا يدخل فيها:</b> زيارة مجدولة لم يُفتح فيها الباب.</p>
+      <p class="small mb0"><b>المالك · المشرف · المصدر · الحالة:</b> مديرة الرعاية · منسقة الزيارات · اجتماع الخدمة · مسودة</p>
+    </div>
+    <ul class="bullets">
+      <li>المرادفات تُذكر حتى يجدها الباحث بأي اسم</li>
+      <li>«لا يدخل فيها» يحسم الحالات الحدية</li>
+      <li>المصدر يجعل المدخل قابلًا للمراجعة</li>
+      <li>الحالة تقول هل يُعتمد عليه بعد</li>
+    </ul>
+  </div>
+  <aside class="notes"><p>اقرأ المدخل بصوت عالٍ، ثم اسأل: لو جاء غدًا محلل جديد، هل يعدّ الزيارات بالطريقة نفسها؟ هذا اختبار المدخل الجيد. في المختبر قالب بالأعمدة التسعة نفسها.</p></aside>
+</section>
+
+<section class="slide" id="genus-then-difference" data-lo="LO3" data-n="7" data-session="1">
+  <div class="kicker">كيف يُكتب التعريف</div>
+  <h2>نوع الشيء أولًا، ثم ما يميزه عن غيره من نوعه</h2>
+  <table class="t">
+    <tr><th>ضعيف</th><th>لماذا</th><th>أقوى</th></tr>
+    <tr><td>المستفيد من الرعاية هو من يستفيد من الخدمة</td><td>دائري</td><td>شخص مسجل في الخدمة تُقدَّم له زيارات منزلية بخطة رعاية معتمدة</td></tr>
+    <tr><td>الزيارة الطارئة مهمة جدًا وتتطلب سرعة</td><td>وصف لا تعريف</td><td>زيارة غير مجدولة تُطلب خلال 24 ساعة بسبب تغير في حال المستفيد</td></tr>
+    <tr><td>خطة الرعاية: تشمل الأدوية والتمارين وغيرها</td><td>قائمة مفتوحة</td><td>وثيقة يعتمدها الطبيب المشرف تحدد نوع الزيارات وتكرارها لكل مستفيد</td></tr>
+  </table>
+  <aside class="notes"><p>المثال الثاني يحمل رقمًا (24 ساعة) لأنه قاعدة في التعريف الافتراضي للرعاية المنزلية، لا معلومة عن جهة حقيقية. اطلب من القاعة تحسين تعريف من جهاتهم بالقاعدة نفسها: ما نوعه؟ وما الذي يميزه؟</p></aside>
+</section>
+
+<section class="slide" id="eight-checks" data-lo="LO3" data-n="8" data-session="1">
+  <div class="kicker">قائمة التحقق</div>
+  <h2>ثمانية بنود يجتازها كل مدخل قبل أن يُعرض للاعتماد</h2>
+  <div class="cols cols-2">
+    <ol class="bullets tight">
+      <li>اسم واحد معتمد، ومرادفاته مذكورة</li>
+      <li>جملة واحدة: النوع ثم ما يميزه</li>
+      <li>غير دائري</li>
+      <li>قاعدة الحساب أو القياس إن وجدت</li>
+    </ol>
+    <ol class="bullets tight" start="5">
+      <li>مثال، أو ما لا يدخل فيه</li>
+      <li>المالك الذي يعتمد، والمشرف الذي يصوغ</li>
+      <li>المصدر الذي أُخذ منه</li>
+      <li>الحالة: مسودة أو معتمد</li>
+    </ol>
+  </div>
+  <div class="callout note mt small"><b>القائمة أداة لا درجة.</b> المدخل الذي يجتاز الثمانية قد يظل خاطئًا في مضمونه؛ لهذا يعتمده المالك.</div>
+  <aside class="notes"><p>هذه القائمة نفسها في ملف المختبر. دليل التقييم يطلب عشرة مدخلات تجتاز قائمة تحقق. اربط البند 6 بأمس: الصياغة لمشرف الأعمال، والاعتماد للمالك.</p></aside>
+</section>
+
+<section class="slide" id="drafted-by-assistant" data-lo="LO3" data-n="9" data-session="1">
+  <div class="kicker">مدخلات يصوغها مساعد</div>
+  <h2>المساعد يكتب تعريفًا سلسًا، والسلاسة ليست دليلًا</h2>
+  <div class="cols cols-2">
+    <div class="chat">
+      <div class="msg user"><span class="who">الطلب</span>اكتب تعريف «الزيارة الطارئة» لقاموس خدمة الرعاية المنزلية.</div>
+      <div class="msg ai bad"><span class="who">المسودة</span>زيارة غير مجدولة تُطلب خلال 48 ساعة، ويعتمدها مدير تقنية المعلومات، وتشمل زيارات التطعيم الدورية.</div>
+    </div>
+    <ul class="bullets">
+      <li><b>رقم مختلف:</b> المصدر يقول 24 ساعة</li>
+      <li><b>مالك خاطئ:</b> التقنية لا تعتمد تعريفًا في الرعاية</li>
+      <li><b>خلط بين مفهومين:</b> التطعيم الدوري مجدول</li>
+    </ul>
+  </div>
+  <div class="callout warn mt small"><b>لهذا تُكتب أول المدخلات دون مساعد.</b> من لم يكتب تعريفًا بيده لا يلتقط ما ينقص في تعريف غيره.</div>
+  <aside class="notes"><p>المسودة مكتوبة لهذا المثال، وتجمع أنماط الخطأ التي يقع فيها المساعد حين لا يعطى المصدر. سياسة المقرر: المختبر 2.1 دون ذكاء اصطناعي في مدخلاتك الخمسة، ثم تراجع خمس مسودات جاهزة. في بقية المختبرات المساعد مرشد يسأل عن التعريف ولا يكتبه.</p></aside>
+</section>
+
+<section class="slide" id="correction-log" data-lo="LO3" data-n="10" data-session="1">
+  <div class="kicker">سجل التصحيحات</div>
+  <h2>كل تصحيح له سطر من المصدر يدل عليه</h2>
+  <table class="t">
+    <tr><th>المصطلح</th><th>الخطأ</th><th>الدليل من المصدر</th><th>التصحيح</th></tr>
+    <tr><td>الزيارة الطارئة</td><td>المهلة</td><td>محضر اجتماع الخدمة: «خلال 24 ساعة»</td><td>24 ساعة</td></tr>
+    <tr><td>الزيارة الطارئة</td><td>المالك</td><td>ميثاق الحوكمة: المالك مديرة الرعاية</td><td>مديرة الرعاية المنزلية</td></tr>
+    <tr><td>الزيارة الطارئة</td><td>خلط</td><td>دليل الخدمة: التطعيم زيارة مجدولة</td><td>احذف التطعيم الدوري</td></tr>
+  </table>
+  <aside class="notes"><p>السجل هو ما يجعل المراجعة قابلة للتدقيق: من يقرأه يعرف لماذا تغير كل حرف. وهو مطلوب في المقرر لكل مدخل صاغه مساعد. تصحيح بلا دليل رأي، والرأي يذهب إلى المالك لا إلى القاموس.</p></aside>
+</section>
+
+<section class="slide" id="check-glossary" data-lo="LO3" data-n="11" data-session="1">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>ما الذي ينقص هذا المدخل؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3" data-id="check-glossary-q1">
+    <p class="lead">مدخل في قاموس الرعاية المنزلية: «مقدم الرعاية: الشخص الذي يقدم الرعاية للمستفيد في منزله. المالك: مديرة الرعاية. المشرف: منسقة الزيارات. المصدر: دليل الخدمة. الحالة: مسودة.» أي بند من القائمة لا يجتازه؟</p>
+    <div class="opts">
+      <div class="opt" data-ok data-k="أ">البند الثالث: التعريف دائري يعيد الكلمة</div>
+      <div class="opt" data-why="المالك والمشرف مذكوران كلاهما في المدخل؛ القراءة السريعة تفوّت سطرًا" data-k="ب">البند السادس: المالك والمشرف غير مذكورين معًا</div>
+      <div class="opt" data-why="المصدر مذكور، وهو دليل الخدمة نفسه الذي يُرجع إليه" data-k="ج">البند السابع: المصدر غير مذكور في المدخل</div>
+      <div class="opt" data-why="ليس لكل مصطلح قاعدة حساب، ومقدم الرعاية شخص لا رقم" data-k="د">البند الرابع: لا قاعدة حساب للمصطلح</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> «يقدم الرعاية» تعيد كلمات المصطلح نفسه. تعريف أقوى: ممرض أو أخصائي علاج طبيعي مرخّص، مكلف بزيارات مستفيد بخطة رعاية معتمدة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. البنود في الخيارات الأخرى يجتازها المدخل: المالك والمشرف مذكوران، والمصدر مذكور، وقاعدة الحساب لا تلزم كل مصطلح. ينقصه أيضًا مثال أو ما لا يدخل فيه (البند الخامس)؛ اقبله إن ذكره أحد، لكن الدائري وحده يجعل المدخل بلا فائدة: من لا يعرف مقدم الرعاية لن يعرفه من هذه الجملة.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-2-1" data-auto="lab" data-lab="2.1" data-label="المختبر 2.1" data-n="12" data-session="1">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 2.1 · 35 دقيقة</div><h2>خمسة مدخلات بيدك وخمسة تصححها</h2><p class="lead small">تكتب خمسة مدخلات في القاموس دون مساعد، ثم تراجع خمسة مدخلات صاغها مساعد مقابل ملاحظات المصدر وتسجّل كل تصحيح.</p><a class="nb" href="../labs/D2_1_glossary.html">D2_1_glossary.html</a></div><ul class="checklist"><li>اقرأ ملاحظات المصطلحات وقائمة التحقق <span class="min">4 د</span></li><li>اكتب المدخلات الخمسة دون مساعد <span class="min">14 د</span></li><li>افحص مدخلاتك ببنود القائمة الثمانية <span class="min">6 د</span></li><li>راجع المدخلات الخمسة المصوغة مقابل المصدر <span class="min">8 د</span></li><li>أكمل سجل التصحيحات <span class="min">3 د</span></li><li class="stretch">✱ إضافي: اطلب من مساعد معتمد أن يسألك عن أضعف مدخلاتك، دون أن يكتبه لك</li></ul></div>
+  <aside class="notes"><p>دون أي مساعد ذكاء اصطناعي في الخطوات 1 إلى 5: هذا شرط سياسة المقرر. المسودات الخمس جاهزة في drafted_entries.xlsx، فلا أحد يحتاج مساعدًا. راقب من يصحح دون دليل. التمرين الإضافي وحده يستعمل مساعدًا معتمدًا، دورًا مرشدًا.</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-1" data-label="بعد المختبر 2.1" data-lo="LO3" data-n="13" data-session="1">
+  <div class="kicker">بعد المختبر 2.1</div>
+  <h2>خمسة أخطاء في خمس مسودات، وكلها تبدو معقولة</h2>
+  <table class="t small">
+    <tr><th>المسودة</th><th>الخطأ</th><th>كيف التُقط</th></tr>
+    <tr><td>الإعانة الشهرية</td><td>حد أعلى 5,000</td><td>المصدر: 3,000 ريال</td></tr>
+    <tr><td>التابع</td><td>قيد عمر لم يقله أحد</td><td>المصدر: من أي عمر</td></tr>
+    <tr><td>التظلم</td><td>تعريف دائري</td><td>البند الثالث</td></tr>
+    <tr><td>الحساب المصرفي المعتمد</td><td>مالك خاطئ</td><td>الإدارة المالية تتحقق منه وتملكه</td></tr>
+    <tr><td>إعادة التقييم الدوري</td><td>خلط بزيارة الرعاية المنزلية</td><td>الزيارة الميدانية غير زيارة الرعاية</td></tr>
+  </table>
+  <aside class="notes"><p>من الحل المرجعي (labs/solutions/D2_1_glossary.md)، والمفتاح يتحقق منه check.py مقابل ملاحظات المصدر. اسأل: أي خطأ فات أكثركم؟ عادة قيد العمر. مع مدخلاتك الخمسة، صار عندك عشرة مدخلات، وهو ما يطلبه دليل التقييم.</p></aside>
+</section>
+
+<!-- الجلسة 2 -->
+
+<section class="slide section" id="s2" data-auto="section" data-session="2" data-n="14">
+  <div class="kicker">الجلسة 2</div>
+  <h1>مصطلح واحد ومعنيان</h1>
+  <ul class="bullets outcomes"><li>تعدّ سجلات جدول بتعريفين مختلفين بدالة شرطية</li><li>تشرح سبب الفرق بين العددين بحالات محددة</li><li>تصوغ مدخلًا يحسم المصطلح ويسمّي من يعتمده</li></ul>
+  <div class="sess-no">02</div>
+</section>
+
+<section class="slide" id="why-definitions-split" data-lo="LO3" data-n="15" data-session="2">
+  <div class="kicker">لماذا يتعارض التعريفان</div>
+  <h2>كل فريق يعرّف الكلمة بحسب القرار الذي يتخذه بها</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>فريق الجدولة في الرعاية</h4><p class="small mb0">«الزيارة مكتملة إذا سُجلت نتيجتها»: يحتاج أن يعرف من يُزار مرة ثانية.</p></div>
+    <div class="card c-cyan"><h4>قسم التخطيط</h4><p class="small mb0">«الزيارة مكتملة إذا مضى موعدها»: يحتاج عدد الزيارات المخطط لها في الشهر.</p></div>
+  </div>
+  <div class="callout tip mt"><b>كلاهما محق لقراره.</b> الخطأ أن يحمل الرقمان الاسم نفسه في تقرير واحد.</div>
+  <aside class="notes"><p>لا تبدأ بالبحث عن «التعريف الصحيح». ابدأ بسؤال: أي قرار يُتخذ بهذا الرقم؟ هذا ما يجعل الخلاف قابلًا للحسم بلا غالب ومغلوب.</p></aside>
+</section>
+
+<section class="slide" id="definition-as-condition" data-lo="LO3" data-n="16" data-session="2">
+  <div class="kicker">من الكلمة إلى الشرط</div>
+  <h2>اكتب كل تعريف شرطًا على أعمدة الجدول، ثم عُدّ</h2>
+  <div class="cols cols-2">
+    <div class="stack">
+      <p class="small"><b>تعريف الجدولة:</b> النتيجة غير فارغة</p>
+      <pre class="code s" data-file="جدول بيانات"><code>=COUNTIFS(E:E,"&lt;&gt;")</code></pre>
+      <p class="small"><b>تعريف التخطيط:</b> الموعد قبل تاريخ المرجع</p>
+      <pre class="code s" data-file="جدول بيانات"><code>=COUNTIFS(C:C,"&lt;="&amp;DATE(2026,9,30))</code></pre>
+    </div>
+    <ul class="bullets">
+      <li>تاريخ مرجع واحد ثابت لكل العد</li>
+      <li>عمود مساعد لكل تعريف: نعم أو لا</li>
+      <li>تصفية «نعم ولا» تكشف الحالات المختلفة</li>
+      <li>تحقق من الخلايا الفارغة بالتصفية، لا بالثقة في الدالة</li>
+    </ul>
+  </div>
+  <aside class="notes"><p>أعمدة المثال افتراضية لجدول زيارات الرعاية (C تاريخ الموعد، E النتيجة). في المختبر الجدول مختلف وأعمدته مختلفة. نبّه إلى الخلايا الفارغة في التواريخ: بعض البرامج تعدها صفرًا. العمود المساعد أوضح من دالة طويلة.</p></aside>
+</section>
+
+<section class="slide" id="gap-by-cause" data-lo="LO3" data-n="17" data-session="2">
+  <div class="kicker">الفرق ليس رقمًا واحدًا</div>
+  <h2>صنّف الحالات المختلفة بأسبابها، فكل سبب قرار</h2>
+  <table class="t">
+    <tr><th>المجموعة في الرعاية المنزلية</th><th>السبب</th><th>القرار الذي يكشفه</th></tr>
+    <tr><td>مضى موعدها ولا نتيجة لها</td><td>الباب لم يُفتح، أو نسي المقدم التسجيل</td><td>هل تُعاد الزيارة؟ وهل التسجيل إلزامي؟</td></tr>
+    <tr><td>لها نتيجة وموعدها لم يأت</td><td>زيارة طارئة سُجلت قبل موعدها المجدول</td><td>هل الطارئة تُعد مكتملة؟</td></tr>
+    <tr><td>لها نتيجة وتاريخ ناقص</td><td>خطأ إدخال</td><td>مشكلة جودة تُسجل</td></tr>
+  </table>
+  <aside class="notes"><p>الفرق الصافي بين رقمين يخفي مجموعتين تسيران في اتجاهين. عدّ كل اتجاه وحده. هذا بالضبط ما تطلبه الرئيسة التنفيذية في ملف المختبر.</p></aside>
+</section>
+
+<section class="slide" id="resolve-the-term" data-lo="LO3 LO2" data-n="18" data-session="2">
+  <div class="kicker">الحسم</div>
+  <h2>المالك يحسم المصطلح، والرقم الآخر يأخذ اسمًا آخر</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>1 · اعرض</b>الرقمين والمجموعات وأسبابها</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>2 · يقرر المالك</b>أي التعريفين يحمل الاسم</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>3 · سمِّ الآخر</b>«زيارة مجدولة منتهية»</div>
+    <div class="arrow">←</div>
+    <div class="step c-navy"><b>4 · أبلغ</b>من يحسب الرقم في تقاريره</div>
+  </div>
+  <div class="callout warn mt"><b>أين يقع الخطأ.</b> أن يختار المحلل التعريف بنفسه، أو أن يجمع المدخل التعريفين في جملة واحدة «أو». لا يُحسم شيء هكذا.</div>
+  <aside class="notes"><p>إذا اختلف مالكان على مصطلح يتقاسمانه، يرفعه الرئيس التنفيذي للبيانات إلى اللجنة. في المختبر المصطلح داخل مجال واحد، فيحسمه مالكه.</p></aside>
+</section>
+
+<section class="slide" id="term-dispute-cost" data-lo="LO3" data-n="19" data-session="2">
+  <div class="kicker">لماذا يستحق الوقت</div>
+  <h2>المصطلح غير المحسوم يكلّف في كل اجتماع</h2>
+  <ul class="bullets">
+    <li>وقت يضيع في التوفيق بين رقمين في كل تقرير</li>
+    <li>قرار يُتخذ على رقم لا يعني ما يظنه صاحبه</li>
+    <li>ثقة تضعف في كل أرقام الجهة بعد أول تناقض علني</li>
+    <li>مبدأ «بيانات موثوقة» في الضوابط الوطنية: جودة عالية، أو شفافية عن مستواها</li>
+  </ul>
+  <aside class="notes"><p>اربط بقصة مَعين: رقمان في اجتماع واحد. هذا ما دفع الهيئة إلى إنشاء المكتب. المصادر: الضوابط الوطنية، القسم 5، مبدأ البيانات الموثوقة.</p></aside>
+</section>
+
+<section class="slide" id="check-two-definitions" data-lo="LO3" data-n="20" data-session="2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>الرقمان مختلفان. ما الخطوة التالية؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3" data-id="check-two-definitions-q1">
+    <p class="lead">عددتَ «الزيارات المكتملة» بتعريفين في الرعاية المنزلية وحصلت على رقمين. ما أنفع ما تقدمه لمديرة الرعاية قبل أن تقرر؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يخفي اتجاهين متعاكسين في رقم صافٍ واحد" data-k="أ">الفرق الصافي بين الرقمين مع نسبته المئوية</div>
+      <div class="opt" data-why="يقرر بدل المالك، فيحسم المحلل ما يعود إلى صاحب القرار" data-k="ب">التعريف الأصح في رأيك مع تبريره المكتوب</div>
+      <div class="opt" data-why="الحل الوسط يصنع رقمًا ثالثًا لا يخدم أي قرار" data-k="ج">متوسط الرقمين حلًّا وسطًا بين الفريقين</div>
+      <div class="opt" data-ok data-k="د">المجموعات المختلفة وعددها وسبب كل منها</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> كل مجموعة تكشف قرارًا (هل الطارئة مكتملة؟ هل التسجيل إلزامي؟). المالكة تحسم بها المصطلح، لا بالفرق الصافي.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: د. من اختار «ب» يفعل ما يغري به المحلل الجيد، لكنه ليس قراره.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-2-2" data-auto="lab" data-lab="2.2" data-label="المختبر 2.2" data-n="21" data-session="2">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 2.2 · 35 دقيقة</div><h2>من هو «المستفيد النشط»؟</h2><p class="lead small">التوفيق بين تعريفين لمصطلح «مستفيد نشط».</p><a class="nb" href="../labs/D2_2_active_beneficiary.html">D2_2_active_beneficiary.html</a></div><ul class="checklist"><li>اقرأ التعريفين وسؤال الرئيسة التنفيذية للبيانات <span class="min">4 د</span></li><li>عدّ الأسر بكل تعريف في جدول البيانات <span class="min">10 د</span></li><li>استخرج الأسر التي يختلف فيها التعريفان وصنّف أسبابها <span class="min">10 د</span></li><li>اكتب مدخل القاموس الذي يحسم المصطلح <span class="min">8 د</span></li><li>سمّ من يعتمده ومن يُبلَّغ به <span class="min">3 د</span></li><li class="stretch">✱ إضافي: اقترح اسمين مقيدين للرقمين حتى لا يُخلط بينهما في التقارير</li></ul></div>
+  <aside class="notes"><p>البداية من families.xlsx وdefinitions_note.txt. 600 أسرة بلا أسماء: لاحظ معهم أن العد لا يحتاج اسمًا، وهذا مبدأ الحد الأدنى. لا تذكر الرقم المنشور هنا؛ يكتشفونه في 2.3. راقب الخلايا الفارغة في تاريخ آخر صرف.</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-2" data-label="بعد المختبر 2.2" data-lo="LO3" data-n="22" data-session="2">
+  <div class="kicker">بعد المختبر 2.2</div>
+  <h2>413 بالصرف، و420 بالحالة، و383 بالاثنين</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>صُرف لها وليست «مقبول»: 30</h4><p class="small mb0">22 موقوفة و8 مغلقة: صُرف لها في يوليو أو أغسطس ثم تغيرت حالتها.</p></div>
+    <div class="card c-coral"><h4>«مقبول» ولم يُصرف لها: 37</h4><p class="small mb0">28 قُبلت في سبتمبر ولم تصلها دفعة، و9 توقف صرفها قبل يوليو: سؤال للإدارة المالية.</p></div>
+  </div>
+  <div class="callout tip mt small"><b>المدخل المرجعي.</b> «مستفيد نشط»: أسرة صُرفت لها إعانة خلال الأشهر الثلاثة السابقة لتاريخ المرجع. والأخرى «أسرة مقبولة». يعتمده مدير البرنامج.</div>
+  <aside class="notes"><p>الأرقام من تشغيل check.py 2.2 على families.xlsx. يُقبل اختيار تعريف الحالة إذا سُمّي الآخر وذُكر المعتمِد. التسعة المتوقف صرفها هي أهم اكتشاف: ليست مشكلة تعريف بل مشكلة صرف.</p></aside>
+</section>
+
+<!-- الجلسة 3 -->
+
+<section class="slide section" id="s3" data-auto="section" data-session="3" data-n="23">
+  <div class="kicker">الجلسة 3</div>
+  <h1>تتبع أصل البيانات</h1>
+  <ul class="bullets outcomes"><li>ترسم مسار رقم منشور من مصدره إلى التقرير</li><li>تميّز النسخ من التحويل في كل محطة</li><li>تكشف خطوة يدوية غير موثقة وأثرها في الرقم</li></ul>
+  <div class="sess-no">03</div>
+</section>
+
+<section class="slide" id="lineage-answers" data-lo="LO3" data-n="24" data-session="3">
+  <div class="kicker">تتبع أصل البيانات</div>
+  <h2>المخطط يجيب: من أين جاء الرقم، وما الذي تغيّر في طريقه</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>من أين</h4><p class="small mb0">النظام والجدول والنموذج الذي وُلدت فيه البيانات.</p></div>
+    <div class="card c-cyan"><h4>ما الذي تغيّر</h4><p class="small mb0">كل تصفية وعدّ وحذف ودمج بين المصدر والتقرير.</p></div>
+    <div class="card c-purple"><h4>من لمسه</h4><p class="small mb0">كل نظام ومهمة وشخص مرّ الرقم به.</p></div>
+  </div>
+  <div class="callout note mt small"><b>متى تحتاجه.</b> حين يُسأل «لماذا هذا الرقم؟»، وقبل تغيير عمود يعتمد عليه تقرير.</div>
+  <aside class="notes"><p>تتبع الأصل على مستوى الأعمدة وآليًا من الأنظمة موضوع مقرر LDS-DMG-202. هنا مخطط يدوي لمجموعة بيانات واحدة: أول مخرج عمل للمجال، ويطلبه دليل التقييم.</p></aside>
+</section>
+
+<section class="slide" id="copy-or-transform" data-lo="LO3" data-n="25" data-session="3">
+  <div class="kicker">محطات وأسهم</div>
+  <h2>كل سهم نسخ أو تحويل، والتحويل يُكتب عليه</h2>
+  <table class="t">
+    <tr><th>على السهم</th><th>يعني</th><th>مثال من الرعاية المنزلية</th></tr>
+    <tr><td><b>نسخ</b></td><td>البيانات تصل كما هي</td><td>النسخ الليلي من نظام الرعاية إلى المستودع</td></tr>
+    <tr><td><b>تحويل: تصفية</b></td><td>بعض الصفوف تسقط</td><td>زيارات الشهر الماضي فقط</td></tr>
+    <tr><td><b>تحويل: عدّ أو جمع</b></td><td>صفوف تصير رقمًا</td><td>عدد الزيارات لكل حي</td></tr>
+    <tr><td><b>تحويل: تعديل يدوي</b></td><td>شخص يغيّر شيئًا</td><td>حذف زيارات تجريبية من ملف التقرير</td></tr>
+  </table>
+  <aside class="notes"><p>اطلب من القاعة: أي سهم في جهاتكم لا يعرف أحد ما يحدث عليه؟ الجواب غالبًا ملف جدول بيانات على جهاز موظف.</p></aside>
+</section>
+
+<section class="slide" id="home-care-lineage" data-lo="LO3" data-read="scaled" data-n="26" data-session="3">
+  <div class="kicker">مثال كامل</div>
+  <h2>عدد الزيارات في التقرير الشهري للوزارة، من الجهاز اللوحي إلى الخطاب</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>الجهاز اللوحي</b>الممرضة تسجّل الزيارة</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>نظام الرعاية</b>جدول <span class="ltr">home_visits</span></div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>المستودع</b>نسخ ليلي</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>لوحة الخدمة</b>عدّ حسب الحي</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>ملف المنسقة</b>تعديل يدوي</div>
+    <div class="arrow">←</div>
+    <div class="step c-navy"><b>خطاب الوزارة</b>الرقم الشهري</div>
+  </div>
+  <div class="callout warn mt"><b>المحطة الحمراء.</b> ملف على جهاز المنسقة لا يظهر في أي نظام، وهو الذي يغيّر الرقم.</div>
+  <aside class="notes"><p>المثال افتراضي من الرعاية المنزلية. اسأل: لو سألت الوزارة لماذا انخفض الرقم، من يعرف الجواب؟ المنسقة وحدها. المخطط يجعل الخطوة مرئية حتى يقرر أحد هل تبقى، وأين توثق.</p></aside>
+</section>
+
+<section class="slide" id="manual-steps-count" data-lo="LO3" data-n="27" data-session="3">
+  <div class="kicker">أين يقع الخطأ</div>
+  <h2>الخطوة اليدوية جزء من المسار، ولو لم تكن في أي نظام</h2>
+  <ul class="bullets">
+    <li>من يرسم الأنظمة وحدها يرسم مسارًا لا ينتج الرقم المنشور</li>
+    <li>اسأل من ينقل الرقم الأخير: ماذا تفعل قبل أن تنقله؟</li>
+    <li>أعد حساب الرقم من المصدر بالتحويلات التي رسمتها: إن لم يطابق، فالمخطط ناقص</li>
+  </ul>
+  <div class="callout tip mt"><b>اختبار المخطط.</b> مخطط صحيح يعيد إنتاج الرقم المنشور من بيانات المصدر.</div>
+  <aside class="notes"><p>هذا هو الاختبار الذي يطلبه المختبر في الخطوة 4. المخطط ليس رسمًا جميلًا؛ هو حساب يمكن إعادته.</p></aside>
+</section>
+
+<section class="slide" id="diagram-conventions" data-lo="LO3" data-n="28" data-session="3">
+  <div class="kicker">كيف ترسم</div>
+  <h2>أربع قواعد تكفي لمخطط يقرؤه غيرك</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>اتجاه واحد</h4><p class="small mb0">من المصدر إلى التقرير، في اتجاه القراءة.</p></div>
+    <div class="card c-cyan"><h4>صندوق لكل محطة</h4><p class="small mb0">اسم بلغة العمل، والنظام والجدول تحته.</p></div>
+    <div class="card c-purple"><h4>كلمة على كل سهم</h4><p class="small mb0">نسخ، أو التحويل باختصار.</p></div>
+    <div class="card c-coral"><h4>لون لما لا يوثَّق</h4><p class="small mb0">ما لا يعرفه إلا شخص واحد يظهر بلون آخر.</p></div>
+  </div>
+  <aside class="notes"><p>الأدوات أمثلة: draw.io أو Excalidraw أو ورقة وقلم. لا تقضِ وقت المختبر في التنسيق: صندوق ونص وسهم.</p></aside>
+</section>
+
+<section class="slide" id="check-lineage" data-lo="LO3" data-n="29" data-session="3">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>المخطط لا يعيد الرقم المنشور</h2>
+  <div class="quiz" data-type="single" data-lo="LO3" data-id="check-lineage-q1">
+    <p class="lead">رسمت مسار عدد زيارات الرعاية من النظام إلى خطاب الوزارة، وأعدت الحساب بتحويلاته، فخرج رقم أكبر من المنشور. ما أرجح تفسير؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يفترض خطأ النظام قبل أن يتحقق من اكتمال المخطط" data-k="أ">النظام يحسب الزيارات خطأ ويجب إصلاحه</div>
+      <div class="opt" data-ok data-k="ب">في المسار خطوة لم تُرسم تحذف صفوفًا</div>
+      <div class="opt" data-why="النسخ الليلي ينقل البيانات كما هي ولا يغيّر عددها" data-k="ج">النسخ الليلي يُسقط بعض الصفوف</div>
+      <div class="opt" data-why="يقبل الفرق دون تفسير، والمخطط المطلوب يعيد الرقم بالضبط" data-k="د">الفرق صغير ويمكن إهماله في التقرير الشهري</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> المنشور أصغر: شيء حذف صفوفًا بعد آخر محطة رسمتها. ابحث عمّن ينقل الرقم الأخير.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ب. هذا ما سيحدث في المختبر. لا تقل أكثر.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-2-3" data-auto="lab" data-lab="2.3" data-label="المختبر 2.3" data-n="30" data-session="3">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 2.3 · 35 دقيقة</div><h2>من نموذج الطلب إلى التقرير</h2><p class="lead small">تتبع مجموعة بيانات من نموذج الطلب إلى التقرير المنشور.</p><a class="nb" href="../labs/D2_3_lineage.html">D2_3_lineage.html</a></div><ul class="checklist"><li>اقرأ النموذج والمقابلة ورسالة المحللة ومقتطف التقرير <span class="min">6 د</span></li><li>ارسم المحطات بالترتيب <span class="min">10 د</span></li><li>اكتب على كل سهم: نسخ أم تحويل، وما التحويل <span class="min">8 د</span></li><li>علّم الخطوة غير الموثقة وأعد حساب الرقم المنشور <span class="min">8 د</span></li><li>اكتب جملة واحدة لصاحب القرار <span class="min">3 د</span></li><li class="stretch">✱ إضافي: اقترح مكانًا في المسار يُسجَّل فيه حذف الأسر قيد التدقيق حتى يصبح موثقًا</li></ul></div>
+  <aside class="notes"><p>الملفات في labs/files/lineage/. لا يحتاج المختبر نتيجة 2.2؛ يعيد الحساب من families.xlsx مباشرة. راقب من يسقط ملف المحللة لأنه «ليس نظامًا».</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-3" data-label="بعد المختبر 2.3" data-lo="LO3" data-n="31" data-session="3">
+  <div class="kicker">بعد المختبر 2.3</div>
+  <h2>المنشور 408 = 420 طلبًا مقبولًا ناقص 12 حُذفت باليد</h2>
+  <div class="cols cols-3">
+    <div class="stat"><div class="big">8</div><div class="lbl">محطات من نموذج الطلب إلى التقرير</div></div>
+    <div class="stat"><div class="big">2</div><div class="lbl">تحويلان: تصفية «مقبول»، وحذف يدوي غير موثق</div></div>
+    <div class="stat"><div class="big">0</div><div class="lbl">من التعريفين في المختبر 2.2 يطابق الرقم المنشور</div></div>
+  </div>
+  <div class="callout warn mt small"><b>ما تعلمته الهيئة.</b> التقرير يسمي «نشطة» ما يعدّه تعريف الحالة، ثم يحذف منه ما لا يعرفه أحد. الحل: تعريف معتمد، وخطوة موثقة في المستودع.</div>
+  <aside class="notes"><p>من تشغيل check.py 2.3: الرقم في المقتطف يساوي عدد «مقبول» في families.xlsx ناقص الأسر الاثنتي عشرة في رسالة المحللة. اربط بـ 2.2: الآن يعرف الجميع لماذا لم يطابق أي من رقميهم.</p></aside>
+</section>
+
+<!-- الجلسة 4 -->
+
+<section class="slide section" id="s4" data-auto="section" data-session="4" data-n="32">
+  <div class="kicker">الجلسة 4</div>
+  <h1>من السجل إلى الكتالوج</h1>
+  <ul class="bullets outcomes"><li>تصنّف حقل بيانات وصفية: أعمال أو فني أو تشغيلي</li><li>تميّز ما تسحبه أداة الكتالوج آليًا مما يكتبه إنسان</li><li>تملأ مدخل كتالوج لأصل من السجل</li></ul>
+  <div class="sess-no">04</div>
+</section>
+
+<section class="slide" id="three-kinds-metadata" data-lo="LO3 LO1" data-n="33" data-session="4">
+  <div class="kicker">البيانات الوصفية</div>
+  <h2>ثلاثة أنواع من البيانات الوصفية، ولكل منها من يعرفه</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>للأعمال</h4><p class="small mb0">ما تعنيه البيانات ولمن هي وكيف يجوز استخدامها: قيود الاستخدام، وجهة الاتصال للأسئلة. يكتبها إنسان.</p></div>
+    <div class="card c-cyan"><h4>فنية</h4><p class="small mb0">كيف بُنيت البيانات: المفتاح الأساسي، وصيغة الملف، ومهمة النقل. تعرفها الأنظمة.</p></div>
+    <div class="card c-purple"><h4>تشغيلية</h4><p class="small mb0">ما يحدث للبيانات أثناء العمل: مدة آخر تحميل، وأخطاؤه، وعدد الاستعلامات. تتغير كل يوم.</p></div>
+  </div>
+  <aside class="notes"><p>المعيار الوطني يقسم البيانات الوصفية إلى هذه الأنواع الثلاثة: للأعمال، وفنية، وتشغيلية. اطلب مثالًا من سجل الزيارات في الرعاية لكل نوع: «لا يُستخدم لأغراض التسويق» قيد استخدام للأعمال، والمفتاح visit_id فني، وأخطاء تحميل أمس تشغيلية. الأمثلة هنا تختلف عمدًا عن حقول المختبر.</p><p>المصادر: الضوابط الوطنية، التعريفات ومجال البيانات الوصفية ودليل البيانات.</p></aside>
+</section>
+
+<section class="slide" id="harvest-or-write" data-lo="LO3" data-n="34" data-session="4">
+  <div class="kicker">آلي أم إنسان</div>
+  <h2>الأداة تسحب ما في الأنظمة، ولا تعرف من يقرر</h2>
+  <table class="t">
+    <tr><th>في مدخل «سجل الزيارات»</th><th>تسحبه الأداة</th><th>يكتبه إنسان</th></tr>
+    <tr><td>المفتاح الأساسي <span class="ltr">visit_id</span></td><td>نعم</td><td></td></tr>
+    <tr><td>عدد الاستعلامات في الشهر</td><td>نعم</td><td></td></tr>
+    <tr><td>قيود الاستخدام</td><td></td><td>مديرة الرعاية تحددها</td></tr>
+    <tr><td>جهة الاتصال للأسئلة</td><td></td><td>مشرف الأعمال يكتبها</td></tr>
+    <tr><td>الغرض الذي جُمعت له البيانات</td><td></td><td>المالكة ومسؤولة حماية البيانات</td></tr>
+  </table>
+  <aside class="notes"><p>القاعدة: ما في النظام تسحبه الأداة، وما هو قرار أو اتفاق يكتبه إنسان. بعض الأدوات تقترح وصفًا أو تصنيفًا آليًا بنموذج لغوي؛ الاقتراح يحتاج مراجعة مشرف، وقياس خطأ هذه الاقتراحات موضوع LDS-DMG-202. في هذا المقرر: ما يحتاج قرارًا يكتبه إنسان.</p></aside>
+</section>
+
+<section class="slide" id="catalogue-demo" data-lo="LO3 LO1" data-n="35" data-session="4">
+  <div class="kicker">عرض المدرب</div>
+  <h2>كتالوج مفتوح المصدر: ما تراه في خمس دقائق</h2>
+  <div class="cols cols-2">
+    <ol class="bullets tight">
+      <li>البحث عن جدول باسمه أو بمصطلح</li>
+      <li>صفحة الجدول: الأعمدة والعدد المسحوبة آليًا</li>
+      <li>الحقول الفارغة: المالك والوصف والتصنيف</li>
+      <li>مخطط تتبع الأصل إن وُصلت الأداة بالمسار</li>
+    </ol>
+    <div class="card c-navy"><h4>أمثلة على الأداة</h4><p class="small mb0"><span class="en">OpenMetadata</span> أو <span class="en">DataHub</span>: كلاهما مفتوح المصدر وله توثيق رسمي وبيئة تجريبية. الأسماء أمثلة لا توصيات.</p></div>
+  </div>
+  <aside class="notes"><p>العرض لم يُجرَّب عند بناء المقرر، ولا يحتاجه المختبر. قبل الدفعة: جرّب البيئة التجريبية للأداة التي تختارها، أو اعرض صفحات التوثيق الرسمية (docs.open-metadata.org، datahub.com). لا تعرض بيانات جهة حقيقية. أسماء المنتجات وواجهاتها تتغير: تحقق منها في الشهر نفسه.</p><p>المصادر: OpenMetadata documentation؛ DataHub.</p></aside>
+</section>
+
+<section class="slide" id="catalogue-single-reference" data-lo="LO1 LO3" data-n="36" data-session="4">
+  <div class="kicker">في المعيار الوطني</div>
+  <h2>الكتالوج مرجع واحد للبيانات الوصفية، والسجل طريقه إليه</h2>
+  <ul class="bullets">
+    <li>مجال البيانات الوصفية ودليل البيانات: وصول إلى بيانات وصفية متكاملة عبر أداة كتالوج هي المرجع الواحد للجهة. النسخة العربية من المعيار تسمي الكتالوج «دليل البيانات» (<span class="en">Data Catalog</span>)</li>
+    <li>الترتيب العملي: سجل يملؤه الناس، ثم أداة تسحب ما يمكن سحبه، ثم مراجعة دورية لما بقي فارغًا</li>
+    <li>مشرف الأعمال يُسند إلى كل أصل في الكتالوج</li>
+  </ul>
+  <aside class="notes"><p>الضوابط الوطنية تصف المجال الثاني بهذا المعنى، وتطلب في ضوابطه إسناد مشرفي بيانات إلى البيانات الوصفية المسجلة. إعادة صياغة، لا اقتباس.</p><p>المصادر: الضوابط الوطنية، القسم 6 ومجال البيانات الوصفية.</p></aside>
+</section>
+
+<section class="slide" id="empty-catalogue" data-lo="LO3" data-n="37" data-session="4">
+  <div class="kicker">أين يقع الخطأ</div>
+  <h2>كتالوج ممتلئ بالأعمدة وفارغ من المعنى لا يستخدمه أحد</h2>
+  <div class="cols cols-2">
+    <div class="card flat c-coral"><h4>ما يحدث</h4><p class="small mb0">تُشترى أداة، وتُسحب آلاف الجداول، ولا مالك ولا وصف ولا مصطلح لأي منها. يبحث الموظف، فيجد أسماء جداول لا يفهمها، ويعود إلى سؤال زميله.</p></div>
+    <div class="card flat c-teal"><h4>ما ينفع</h4><p class="small mb0">ابدأ بأصول مجال واحد مسجلة بملاكها، وأدخلها الأداة، وقس كل شهر كم حقلًا للأعمال ما زال فارغًا.</p></div>
+  </div>
+  <aside class="notes"><p>هذا من الأنماط المعروفة في المجال: الأداة قبل الملكية. اسأل القاعة: هل اشترت جهاتكم أداة قبل أن تعرف من يملأ حقولها؟</p></aside>
+</section>
+
+<section class="slide" id="check-metadata" data-lo="LO3" data-n="38" data-session="4">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>من يملأ هذا الحقل؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO3" data-id="check-metadata-q1">
+    <p class="lead">في مدخل كتالوج «سجل الزيارات» في الرعاية المنزلية، حقل «مدة الحفظ المعتمدة: خمس سنوات». من أين يأتي؟</p>
+    <div class="opts">
+      <div class="opt" data-why="الأداة ترى عمر أقدم سجل في الجدول، لا المدة التي اعتُمدت" data-k="أ">تسحبه الأداة من تاريخ أقدم سجل في الجدول</div>
+      <div class="opt" data-why="الاقتراح الآلي يحتاج مراجعة، والمدة قرار لا يُستنتج من وصف الجدول" data-k="ب">تقترحه الأداة بنموذج لغوي من وصف الجدول</div>
+      <div class="opt" data-ok data-k="ج">يكتبه إنسان من سياسة الحفظ التي اعتمدتها اللجنة</div>
+      <div class="opt" data-why="مدة بقاء النسخ الاحتياطية إعداد تقني، لا قرار حفظ معتمد" data-k="د">يستنتجه المشرف الفني من إعدادات النسخ الاحتياطي</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> المدة المعتمدة قرار حوكمة، والقرار لا يُسحب من النظام. الأداة تعرف عمر أقدم سجل، والفرق بينهما يكشف هل تُطبَّق السياسة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. اربط بشريحة «الحوكمة تقرر» في اليوم الأول: سياسة الحفظ تعتمدها اللجنة، والكتالوج يحمل نتيجتها. من اختار «د» خلط بين نسخ النظام الاحتياطية وحفظ السجلات نفسها.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-2-4" data-auto="lab" data-lab="2.4" data-label="المختبر 2.4" data-n="39" data-session="4">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 2.4 · 35 دقيقة</div><h2>ثلاثة مدخلات كتالوج</h2><p class="lead small">تحوّل ثلاثة صفوف من سجل مرجعي إلى مدخلات كتالوج: تصنف أربعة عشر حقلًا، وتحدد من يملأ كلًّا منها، وتكتب ما ينقص.</p><a class="nb" href="../labs/D2_4_catalogue.html">D2_4_catalogue.html</a></div><ul class="checklist"><li>اقرأ الحقول الأربعة عشر وصفوف السجل الثلاثة <span class="min">4 د</span></li><li>صنّف كل حقل: أعمال أو فني أو تشغيلي <span class="min">8 د</span></li><li>حدد ما تسحبه الأداة آليًا وما يكتبه إنسان <span class="min">7 د</span></li><li>املأ المدخلات الثلاثة مما تعرفه <span class="min">11 د</span></li><li>اكتب الحقول التي بقيت فارغة ومن يملؤها <span class="min">5 د</span></li><li class="stretch">✱ إضافي: شاهد عرض المدرب لأداة كتالوج مفتوحة المصدر، وسمّ حقلين سحبتهما الأداة ولم تكتبهما أنت</li></ul></div>
+  <aside class="notes"><p>البداية من register_start.xlsx، لا من سجل المشارك. الأصول الثلاثة: A-02 الأسر، وA-09 المدفوعات، وA-13 المؤشرات المنشورة. التمرين الإضافي هو العرض الحي إن كان متاحًا.</p></aside>
+</section>
+
+<section class="slide" id="debrief-2-4" data-label="بعد المختبر 2.4" data-lo="LO3" data-n="40" data-session="4">
+  <div class="kicker">بعد المختبر 2.4</div>
+  <h2>ستة حقول تسحبها الأداة، وثمانية تنتظر إنسانًا</h2>
+  <div class="bars">
+    <div class="row"><span>للأعمال</span><div class="bar c-teal" style="--w:100%"></div><span class="val">7</span></div>
+    <div class="row"><span>تشغيلية</span><div class="bar c-purple" style="--w:57%"></div><span class="val">4</span></div>
+    <div class="row"><span>فنية</span><div class="bar c-cyan" style="--w:43%"></div><span class="val">3</span></div>
+  </div>
+  <div class="callout note mt small"><b>والمدفوعات.</b> بلا مشرف من جهة الأعمال، ومالكها «قيد التأكيد»: الكتالوج يكشف ما لم يحسمه السجل.</div>
+  <aside class="notes"><p>من تشغيل check.py 2.4 وlabs/solutions/D2_4_catalogue.md. لا حقل آلي من بيانات الأعمال: هذه قاعدة يتحقق منها الحل.</p></aside>
+</section>
+
+<section class="slide" id="wrap-up" data-n="41" data-session="4">
+  <div class="kicker">خلاصة اليوم 2</div>
+  <h2>ثلاثة أمور تبقى معك</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>التعريف شرط يُعد</h4><p class="small mb0">نوع ثم ما يميزه، وقاعدة حساب، ومالك يعتمد. ما لا يُعد لا يحسم شيئًا.</p></div>
+    <div class="card c-coral"><h4>المسودة تحتاج دليلًا</h4><p class="small mb0">مدخل سلس من مساعد يُراجع سطرًا سطرًا، وكل تصحيح له مصدر.</p></div>
+    <div class="card c-purple"><h4>المخطط يعيد الرقم</h4><p class="small mb0">مسار لا يعيد إنتاج الرقم المنشور مسار ناقص، والناقص غالبًا ملف على جهاز.</p></div>
+  </div>
+  <aside class="notes"><p>اسأل: أي رقم في جهاتكم تريدون أن تتتبعوا أصله غدًا؟ هذا من أفضل موضوعات مهمة المتابعة.</p></aside>
+</section>
+
+<section class="slide dark" id="next" data-label="التالي" data-n="42" data-session="4">
+  <div class="kicker">غدًا · اليوم 3</div>
+  <h2>الحماية والجودة والقياس</h2>
+  <p class="lead">مستويات تصنيف مبدئية لخمسة عشر أصلًا، وقياس ثلاثة جداول، وستة طلبات على مكتب البيانات، ولقطة نضج من عشرين وثيقة تبدأ بها المشروع الختامي.</p>
+  <aside class="notes"><p>لا تحضير غير قراءة موجز سياسة التصنيف في ملف classification_guide.txt إن أراد أحد أن يسبق. المختبرات غير المكتملة تُكمل من ملفاتها.</p></aside>
+</section>
+</div>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T22:00:29Z","version":"2027.1.0","commit":"87991cf"},"course":{"id":"lds-dmg-101","code":"LDS-DMG-101","title":"أسس إدارة البيانات","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-dmg-101/","repo":"SDAIAAcademy/lds-dmg-101","home":"../index.html"},"deck":{"id":"day2","kind":"day","day":2,"label":"اليوم 2","title":"المعنى والمسار","prev":"day1.html","next":"day3.html","md":"day2.md","alt":{}},"sessions":[{"n":1,"label":"الجلسة 1","title":"قاموس الأعمال وقاموس البيانات","slide":"s1","outcomes":["تفرّق بين قاموس مصطلحات الأعمال وقاموس البيانات","تكتب مدخلًا يجتاز قائمة تحقق من ثمانية بنود","تراجع مدخلًا صاغه مساعد مقابل المصدر وتسجّل التصحيح"],"minutes":70,"lab":{"id":"2.1","title":"خمسة مدخلات بيدك وخمسة تصححها","minutes":35,"href":"../labs/D2_1_glossary.html"}},{"n":2,"label":"الجلسة 2","title":"مصطلح واحد ومعنيان","slide":"s2","outcomes":["تعدّ سجلات جدول بتعريفين مختلفين بدالة شرطية","تشرح سبب الفرق بين العددين بحالات محددة","تصوغ مدخلًا يحسم المصطلح ويسمّي من يعتمده"],"minutes":70,"lab":{"id":"2.2","title":"من هو «المستفيد النشط»؟","minutes":35,"href":"../labs/D2_2_active_beneficiary.html"}},{"n":3,"label":"الجلسة 3","title":"تتبع أصل البيانات","slide":"s3","outcomes":["ترسم مسار رقم منشور من مصدره إلى التقرير","تميّز النسخ من التحويل في كل محطة","تكشف خطوة يدوية غير موثقة وأثرها في الرقم"],"minutes":70,"lab":{"id":"2.3","title":"من نموذج الطلب إلى التقرير","minutes":35,"href":"../labs/D2_3_lineage.html"}},{"n":4,"label":"الجلسة 4","title":"من السجل إلى الكتالوج","slide":"s4","outcomes":["تصنّف حقل بيانات وصفية: أعمال أو فني أو تشغيلي","تميّز ما تسحبه أداة الكتالوج آليًا مما يكتبه إنسان","تملأ مدخل كتالوج لأصل من السجل"],"minutes":70,"lab":{"id":"2.4","title":"ثلاثة مدخلات كتالوج","minutes":35,"href":"../labs/D2_4_catalogue.html"}}],"slides":[{"id":"title","n":1,"title":"المعنى والمسار","kind":"title","session":0,"hash":"54332807","md":"#### [day2#title] المعنى والمسار\n\n*أكاديمية سدايا · أسس إدارة البيانات*\n\nاليوم 2: قاموس المصطلحات، وحسم التعريفات المتعارضة، وتتبع أصل الرقم المنشور، والانتقال من السجل إلى الكتالوج\n\nمسار التنفيذيين والقادة · 3 أيام تدريبية + يوم للمشروع الختامي · 4 جلسات · 4 مختبرات · LDS-DMG-101","notes":"ابدأ بسؤال: من سمع في اجتماع رقمين مختلفين للشيء نفسه؟ اليوم نعرف من أين يأتي ذلك: من كلمة بلا تعريف، أو من رقم بلا مسار. كل الأيام تبدأ من ملفات جاهزة؛ اليوم يبدأ الجميع من السجل المرجعي لا من سجلاتهم.","minutes":null,"lo":[]},{"id":"agenda","n":2,"title":"المعنى والمسار","kind":"content","session":0,"hash":"7183e225","md":"#### [day2#agenda] المعنى والمسار\n\n*اليوم*\n\n- **الجلسة 1 · قاموس الأعمال وقاموس البيانات**: قاموس مصطلحات الأعمال مقابل قاموس البيانات، وتشريح المدخل الجيد، وقائمة تحقق\n- **الجلسة 2 · مصطلح واحد ومعنيان**: لماذا تتعارض التعريفات، وكيف تعدّ بكل تعريف، وكيف يحسم المالك المصطلح\n- **الجلسة 3 · تتبع أصل البيانات**: مخطط تتبع الأصل: المحطات والتحويلات والخطوات اليدوية، وكيف يُرسم ويُقرأ\n- **الجلسة 4 · من السجل إلى الكتالوج**: البيانات الوصفية للأعمال والفنية والتشغيلية، وما تسحبه أداة الكتالوج وما يكتبه إنسان","notes":"أربع جلسات: القاموس، والتعريف المتعارض، وتتبع الأصل، والكتالوج. المختبر الأول دون أي مساعد ذكاء اصطناعي. الاستراحات بزر B.","minutes":null,"lo":[]},{"id":"check-review-day1","n":3,"title":"قرار بلا صاحب","kind":"quiz","session":0,"hash":"e6fbebff","md":"#### [day2#check-review-day1] قرار بلا صاحب\n\n*مراجعة أمس*\n\n**سؤال:** في المراكز المجتمعية، طلب مدرب قائمة المشتركين بأرقام جوالاتهم. أعدّ المنسق القائمة، وينتظر المشرف الفني من يقول له «أرسل». من يقول ذلك؟\n\n- أ. المنسق، لأنه أعدّ القائمة وراجع أسماءها\n- ب. الرئيس التنفيذي للبيانات\n- ج. مالك بيانات المراكز المجتمعية\n- د. المشرف الفني نفسه، لأنه من سيرسل الملف","notes":"الإجابة: ج. دقيقة واحدة. إن اختار أحد «د»، أعد قاعدة الأمس: من يقرر ليس من ينفذ.","minutes":null,"lo":["LO2"]},{"id":"s1","n":4,"title":"قاموس الأعمال وقاموس البيانات","kind":"section","session":1,"hash":"3c85caaa","md":"#### [day2#s1] قاموس الأعمال وقاموس البيانات\n\n*الجلسة 1*\n\n- تفرّق بين قاموس مصطلحات الأعمال وقاموس البيانات\n- تكتب مدخلًا يجتاز قائمة تحقق من ثمانية بنود\n- تراجع مدخلًا صاغه مساعد مقابل المصدر وتسجّل التصحيح","notes":"","minutes":null,"lo":["LO3"]},{"id":"glossary-vs-dictionary","n":5,"title":"قاموس الأعمال يعرّف الكلمة، وقاموس البيانات يصف العمود","kind":"content","session":1,"hash":"d977d8e3","md":"#### [day2#glossary-vs-dictionary] قاموس الأعمال يعرّف الكلمة، وقاموس البيانات يصف العمود\n\n*قاموسان لا قاموس واحد*\n\n|  | قاموس مصطلحات الأعمال | قاموس البيانات |\n| --- | --- | --- |\n| يجيب عن | ماذا نعني بـ«زيارة مكتملة»؟ | ما في العمود visit_status، وما قيمه المسموحة؟ |\n| يكتبه | مشرف الأعمال، ويعتمده المالك | المشرف الفني من النظام |\n| يقرؤه | المدير والمحلل والجمهور | المحلل والمطور |\n| يتغير حين | يتغير قرار في العمل | يتغير النظام |\n\n> **الربط.** العمود visit_status يشير إلى المصطلح «زيارة مكتملة». بلا هذا الربط، يحسب كل محلل الزيارة المكتملة بطريقته.","notes":"الأمثلة من خدمة الرعاية المنزلية. اسأل: أيهما يوجد في جهاتكم؟ غالبًا قاموس بيانات في وثيقة النظام، ولا قاموس أعمال. المختبر يبدأ بقاموس الأعمال لأنه الأصعب والأهم لصاحب القرار.","minutes":null,"lo":["LO3"]},{"id":"anatomy-of-an-entry","n":6,"title":"المدخل الجيد يقول ما الشيء، وكيف يُعد، ومن يعتمده","kind":"content","session":1,"hash":"2ce8290b","md":"#### [day2#anatomy-of-an-entry] المدخل الجيد يقول ما الشيء، وكيف يُعد، ومن يعتمده\n\n*تشريح المدخل*\n\n- **زيارة مكتملة.** **التعريف:** زيارة رعاية منزلية حضرها مقدم الرعاية في المنزل وسجّل نتيجتها في النظام في اليوم نفسه. **قاعدة العد:** لها تاريخ حضور ونتيجة غير فارغة. **لا يدخل فيها:** زيارة مجدولة لم يُفتح فيها الباب. **المالك · المشرف · المصدر · الحالة:** مديرة الرعاية · منسقة الزيارات · اجتماع الخدمة · مسودة\n\n- المرادفات تُذكر حتى يجدها الباحث بأي اسم\n- «لا يدخل فيها» يحسم الحالات الحدية\n- المصدر يجعل المدخل قابلًا للمراجعة\n- الحالة تقول هل يُعتمد عليه بعد","notes":"اقرأ المدخل بصوت عالٍ، ثم اسأل: لو جاء غدًا محلل جديد، هل يعدّ الزيارات بالطريقة نفسها؟ هذا اختبار المدخل الجيد. في المختبر قالب بالأعمدة التسعة نفسها.","minutes":null,"lo":["LO3"]},{"id":"genus-then-difference","n":7,"title":"نوع الشيء أولًا، ثم ما يميزه عن غيره من نوعه","kind":"content","session":1,"hash":"5468bd64","md":"#### [day2#genus-then-difference] نوع الشيء أولًا، ثم ما يميزه عن غيره من نوعه\n\n*كيف يُكتب التعريف*\n\n| ضعيف | لماذا | أقوى |\n| --- | --- | --- |\n| المستفيد من الرعاية هو من يستفيد من الخدمة | دائري | شخص مسجل في الخدمة تُقدَّم له زيارات منزلية بخطة رعاية معتمدة |\n| الزيارة الطارئة مهمة جدًا وتتطلب سرعة | وصف لا تعريف | زيارة غير مجدولة تُطلب خلال 24 ساعة بسبب تغير في حال المستفيد |\n| خطة الرعاية: تشمل الأدوية والتمارين وغيرها | قائمة مفتوحة | وثيقة يعتمدها الطبيب المشرف تحدد نوع الزيارات وتكرارها لكل مستفيد |","notes":"المثال الثاني يحمل رقمًا (24 ساعة) لأنه قاعدة في التعريف الافتراضي للرعاية المنزلية، لا معلومة عن جهة حقيقية. اطلب من القاعة تحسين تعريف من جهاتهم بالقاعدة نفسها: ما نوعه؟ وما الذي يميزه؟","minutes":null,"lo":["LO3"]},{"id":"eight-checks","n":8,"title":"ثمانية بنود يجتازها كل مدخل قبل أن يُعرض للاعتماد","kind":"content","session":1,"hash":"35e21450","md":"#### [day2#eight-checks] ثمانية بنود يجتازها كل مدخل قبل أن يُعرض للاعتماد\n\n*قائمة التحقق*\n\n1. اسم واحد معتمد، ومرادفاته مذكورة\n2. جملة واحدة: النوع ثم ما يميزه\n3. غير دائري\n4. قاعدة الحساب أو القياس إن وجدت\n\n5. مثال، أو ما لا يدخل فيه\n6. المالك الذي يعتمد، والمشرف الذي يصوغ\n7. المصدر الذي أُخذ منه\n8. الحالة: مسودة أو معتمد\n\n> **القائمة أداة لا درجة.** المدخل الذي يجتاز الثمانية قد يظل خاطئًا في مضمونه؛ لهذا يعتمده المالك.","notes":"هذه القائمة نفسها في ملف المختبر. دليل التقييم يطلب عشرة مدخلات تجتاز قائمة تحقق. اربط البند 6 بأمس: الصياغة لمشرف الأعمال، والاعتماد للمالك.","minutes":null,"lo":["LO3"]},{"id":"drafted-by-assistant","n":9,"title":"المساعد يكتب تعريفًا سلسًا، والسلاسة ليست دليلًا","kind":"content","session":1,"hash":"c5c75d91","md":"#### [day2#drafted-by-assistant] المساعد يكتب تعريفًا سلسًا، والسلاسة ليست دليلًا\n\n*مدخلات يصوغها مساعد*\n\n**الطلب:** اكتب تعريف «الزيارة الطارئة» لقاموس خدمة الرعاية المنزلية.\n\n**المسودة (مثال ضعيف):** زيارة غير مجدولة تُطلب خلال 48 ساعة، ويعتمدها مدير تقنية المعلومات، وتشمل زيارات التطعيم الدورية.\n\n- **رقم مختلف:** المصدر يقول 24 ساعة\n- **مالك خاطئ:** التقنية لا تعتمد تعريفًا في الرعاية\n- **خلط بين مفهومين:** التطعيم الدوري مجدول\n\n> **لهذا تُكتب أول المدخلات دون مساعد.** من لم يكتب تعريفًا بيده لا يلتقط ما ينقص في تعريف غيره.","notes":"المسودة مكتوبة لهذا المثال، وتجمع أنماط الخطأ التي يقع فيها المساعد حين لا يعطى المصدر. سياسة المقرر: المختبر 2.1 دون ذكاء اصطناعي في مدخلاتك الخمسة، ثم تراجع خمس مسودات جاهزة. في بقية المختبرات المساعد مرشد يسأل عن التعريف ولا يكتبه.","minutes":null,"lo":["LO3"]},{"id":"correction-log","n":10,"title":"كل تصحيح له سطر من المصدر يدل عليه","kind":"content","session":1,"hash":"8e683f90","md":"#### [day2#correction-log] كل تصحيح له سطر من المصدر يدل عليه\n\n*سجل التصحيحات*\n\n| المصطلح | الخطأ | الدليل من المصدر | التصحيح |\n| --- | --- | --- | --- |\n| الزيارة الطارئة | المهلة | محضر اجتماع الخدمة: «خلال 24 ساعة» | 24 ساعة |\n| الزيارة الطارئة | المالك | ميثاق الحوكمة: المالك مديرة الرعاية | مديرة الرعاية المنزلية |\n| الزيارة الطارئة | خلط | دليل الخدمة: التطعيم زيارة مجدولة | احذف التطعيم الدوري |","notes":"السجل هو ما يجعل المراجعة قابلة للتدقيق: من يقرأه يعرف لماذا تغير كل حرف. وهو مطلوب في المقرر لكل مدخل صاغه مساعد. تصحيح بلا دليل رأي، والرأي يذهب إلى المالك لا إلى القاموس.","minutes":null,"lo":["LO3"]},{"id":"check-glossary","n":11,"title":"ما الذي ينقص هذا المدخل؟","kind":"quiz","session":1,"hash":"3fbeb845","md":"#### [day2#check-glossary] ما الذي ينقص هذا المدخل؟\n\n*نقطة تحقق*\n\n**سؤال:** مدخل في قاموس الرعاية المنزلية: «مقدم الرعاية: الشخص الذي يقدم الرعاية للمستفيد في منزله. المالك: مديرة الرعاية. المشرف: منسقة الزيارات. المصدر: دليل الخدمة. الحالة: مسودة.» أي بند من القائمة لا يجتازه؟\n\n- أ. البند الثالث: التعريف دائري يعيد الكلمة\n- ب. البند السادس: المالك والمشرف غير مذكورين معًا\n- ج. البند السابع: المصدر غير مذكور في المدخل\n- د. البند الرابع: لا قاعدة حساب للمصطلح","notes":"الإجابة: أ. البنود في الخيارات الأخرى يجتازها المدخل: المالك والمشرف مذكوران، والمصدر مذكور، وقاعدة الحساب لا تلزم كل مصطلح. ينقصه أيضًا مثال أو ما لا يدخل فيه (البند الخامس)؛ اقبله إن ذكره أحد، لكن الدائري وحده يجعل المدخل بلا فائدة: من لا يعرف مقدم الرعاية لن يعرفه من هذه الجملة.","minutes":null,"lo":["LO3"]},{"id":"lab-2-1","n":12,"title":"خمسة مدخلات بيدك وخمسة تصححها","kind":"lab","session":1,"hash":"dd346556","md":"#### [day2#lab-2-1] خمسة مدخلات بيدك وخمسة تصححها\n\nالمختبر 2.1 · 35 دقيقة\n\nتكتب خمسة مدخلات في القاموس دون مساعد، ثم تراجع خمسة مدخلات صاغها مساعد مقابل ملاحظات المصدر وتسجّل كل تصحيح.\n\n[D2_1_glossary.html](https://sdaiaacademy.github.io/lds-dmg-101/labs/D2_1_glossary.html)\n\n- [ ] اقرأ ملاحظات المصطلحات وقائمة التحقق (4 د)\n- [ ] اكتب المدخلات الخمسة دون مساعد (14 د)\n- [ ] افحص مدخلاتك ببنود القائمة الثمانية (6 د)\n- [ ] راجع المدخلات الخمسة المصوغة مقابل المصدر (8 د)\n- [ ] أكمل سجل التصحيحات (3 د)\n- [ ] ✱ إضافي: اطلب من مساعد معتمد أن يسألك عن أضعف مدخلاتك، دون أن يكتبه لك","notes":"دون أي مساعد ذكاء اصطناعي في الخطوات 1 إلى 5: هذا شرط سياسة المقرر. المسودات الخمس جاهزة في drafted_entries.xlsx، فلا أحد يحتاج مساعدًا. راقب من يصحح دون دليل. التمرين الإضافي وحده يستعمل مساعدًا معتمدًا، دورًا مرشدًا.","minutes":null,"lo":[]},{"id":"debrief-2-1","n":13,"title":"خمسة أخطاء في خمس مسودات، وكلها تبدو معقولة","kind":"content","session":1,"hash":"8936d855","md":"#### [day2#debrief-2-1] خمسة أخطاء في خمس مسودات، وكلها تبدو معقولة\n\n*بعد المختبر 2.1*\n\n| المسودة | الخطأ | كيف التُقط |\n| --- | --- | --- |\n| الإعانة الشهرية | حد أعلى 5,000 | المصدر: 3,000 ريال |\n| التابع | قيد عمر لم يقله أحد | المصدر: من أي عمر |\n| التظلم | تعريف دائري | البند الثالث |\n| الحساب المصرفي المعتمد | مالك خاطئ | الإدارة المالية تتحقق منه وتملكه |\n| إعادة التقييم الدوري | خلط بزيارة الرعاية المنزلية | الزيارة الميدانية غير زيارة الرعاية |","notes":"من الحل المرجعي (labs/solutions/D2_1_glossary.md)، والمفتاح يتحقق منه check.py مقابل ملاحظات المصدر. اسأل: أي خطأ فات أكثركم؟ عادة قيد العمر. مع مدخلاتك الخمسة، صار عندك عشرة مدخلات، وهو ما يطلبه دليل التقييم.","minutes":null,"lo":["LO3"]},{"id":"s2","n":14,"title":"مصطلح واحد ومعنيان","kind":"section","session":2,"hash":"77eed87a","md":"#### [day2#s2] مصطلح واحد ومعنيان\n\n*الجلسة 2*\n\n- تعدّ سجلات جدول بتعريفين مختلفين بدالة شرطية\n- تشرح سبب الفرق بين العددين بحالات محددة\n- تصوغ مدخلًا يحسم المصطلح ويسمّي من يعتمده","notes":"","minutes":null,"lo":["LO3"]},{"id":"why-definitions-split","n":15,"title":"كل فريق يعرّف الكلمة بحسب القرار الذي يتخذه بها","kind":"content","session":2,"hash":"746ed9ed","md":"#### [day2#why-definitions-split] كل فريق يعرّف الكلمة بحسب القرار الذي يتخذه بها\n\n*لماذا يتعارض التعريفان*\n\n- **فريق الجدولة في الرعاية.** «الزيارة مكتملة إذا سُجلت نتيجتها»: يحتاج أن يعرف من يُزار مرة ثانية.\n- **قسم التخطيط.** «الزيارة مكتملة إذا مضى موعدها»: يحتاج عدد الزيارات المخطط لها في الشهر.\n\n> **كلاهما محق لقراره.** الخطأ أن يحمل الرقمان الاسم نفسه في تقرير واحد.","notes":"لا تبدأ بالبحث عن «التعريف الصحيح». ابدأ بسؤال: أي قرار يُتخذ بهذا الرقم؟ هذا ما يجعل الخلاف قابلًا للحسم بلا غالب ومغلوب.","minutes":null,"lo":["LO3"]},{"id":"definition-as-condition","n":16,"title":"اكتب كل تعريف شرطًا على أعمدة الجدول، ثم عُدّ","kind":"content","session":2,"hash":"5c8b1a00","md":"#### [day2#definition-as-condition] اكتب كل تعريف شرطًا على أعمدة الجدول، ثم عُدّ\n\n*من الكلمة إلى الشرط*\n\n**تعريف الجدولة:** النتيجة غير فارغة\n\n```\n# ملف: جدول بيانات\n=COUNTIFS(E:E,\"\u003c>\")\n```\n\n**تعريف التخطيط:** الموعد قبل تاريخ المرجع\n\n```\n# ملف: جدول بيانات\n=COUNTIFS(C:C,\"\u003c=\"&DATE(2026,9,30))\n```\n\n- تاريخ مرجع واحد ثابت لكل العد\n- عمود مساعد لكل تعريف: نعم أو لا\n- تصفية «نعم ولا» تكشف الحالات المختلفة\n- تحقق من الخلايا الفارغة بالتصفية، لا بالثقة في الدالة","notes":"أعمدة المثال افتراضية لجدول زيارات الرعاية (C تاريخ الموعد، E النتيجة). في المختبر الجدول مختلف وأعمدته مختلفة. نبّه إلى الخلايا الفارغة في التواريخ: بعض البرامج تعدها صفرًا. العمود المساعد أوضح من دالة طويلة.","minutes":null,"lo":["LO3"]},{"id":"gap-by-cause","n":17,"title":"صنّف الحالات المختلفة بأسبابها، فكل سبب قرار","kind":"content","session":2,"hash":"1702593c","md":"#### [day2#gap-by-cause] صنّف الحالات المختلفة بأسبابها، فكل سبب قرار\n\n*الفرق ليس رقمًا واحدًا*\n\n| المجموعة في الرعاية المنزلية | السبب | القرار الذي يكشفه |\n| --- | --- | --- |\n| مضى موعدها ولا نتيجة لها | الباب لم يُفتح، أو نسي المقدم التسجيل | هل تُعاد الزيارة؟ وهل التسجيل إلزامي؟ |\n| لها نتيجة وموعدها لم يأت | زيارة طارئة سُجلت قبل موعدها المجدول | هل الطارئة تُعد مكتملة؟ |\n| لها نتيجة وتاريخ ناقص | خطأ إدخال | مشكلة جودة تُسجل |","notes":"الفرق الصافي بين رقمين يخفي مجموعتين تسيران في اتجاهين. عدّ كل اتجاه وحده. هذا بالضبط ما تطلبه الرئيسة التنفيذية في ملف المختبر.","minutes":null,"lo":["LO3"]},{"id":"resolve-the-term","n":18,"title":"المالك يحسم المصطلح، والرقم الآخر يأخذ اسمًا آخر","kind":"content","session":2,"hash":"9d209b12","md":"#### [day2#resolve-the-term] المالك يحسم المصطلح، والرقم الآخر يأخذ اسمًا آخر\n\n*الحسم*\n\n1. **1 · اعرض** الرقمين والمجموعات وأسبابها\n2. **2 · يقرر المالك** أي التعريفين يحمل الاسم\n3. **3 · سمِّ الآخر** «زيارة مجدولة منتهية»\n4. **4 · أبلغ** من يحسب الرقم في تقاريره\n\n> **أين يقع الخطأ.** أن يختار المحلل التعريف بنفسه، أو أن يجمع المدخل التعريفين في جملة واحدة «أو». لا يُحسم شيء هكذا.","notes":"إذا اختلف مالكان على مصطلح يتقاسمانه، يرفعه الرئيس التنفيذي للبيانات إلى اللجنة. في المختبر المصطلح داخل مجال واحد، فيحسمه مالكه.","minutes":null,"lo":["LO3","LO2"]},{"id":"term-dispute-cost","n":19,"title":"المصطلح غير المحسوم يكلّف في كل اجتماع","kind":"content","session":2,"hash":"8983f27f","md":"#### [day2#term-dispute-cost] المصطلح غير المحسوم يكلّف في كل اجتماع\n\n*لماذا يستحق الوقت*\n\n- وقت يضيع في التوفيق بين رقمين في كل تقرير\n- قرار يُتخذ على رقم لا يعني ما يظنه صاحبه\n- ثقة تضعف في كل أرقام الجهة بعد أول تناقض علني\n- مبدأ «بيانات موثوقة» في الضوابط الوطنية: جودة عالية، أو شفافية عن مستواها","notes":"اربط بقصة مَعين: رقمان في اجتماع واحد. هذا ما دفع الهيئة إلى إنشاء المكتب. المصادر: الضوابط الوطنية، القسم 5، مبدأ البيانات الموثوقة.","minutes":null,"lo":["LO3"]},{"id":"check-two-definitions","n":20,"title":"الرقمان مختلفان. ما الخطوة التالية؟","kind":"quiz","session":2,"hash":"795e8f2d","md":"#### [day2#check-two-definitions] الرقمان مختلفان. ما الخطوة التالية؟\n\n*نقطة تحقق*\n\n**سؤال:** عددتَ «الزيارات المكتملة» بتعريفين في الرعاية المنزلية وحصلت على رقمين. ما أنفع ما تقدمه لمديرة الرعاية قبل أن تقرر؟\n\n- أ. الفرق الصافي بين الرقمين مع نسبته المئوية\n- ب. التعريف الأصح في رأيك مع تبريره المكتوب\n- ج. متوسط الرقمين حلًّا وسطًا بين الفريقين\n- د. المجموعات المختلفة وعددها وسبب كل منها","notes":"الإجابة: د. من اختار «ب» يفعل ما يغري به المحلل الجيد، لكنه ليس قراره.","minutes":null,"lo":["LO3"]},{"id":"lab-2-2","n":21,"title":"من هو «المستفيد النشط»؟","kind":"lab","session":2,"hash":"860f386b","md":"#### [day2#lab-2-2] من هو «المستفيد النشط»؟\n\nالمختبر 2.2 · 35 دقيقة\n\nالتوفيق بين تعريفين لمصطلح «مستفيد نشط».\n\n[D2_2_active_beneficiary.html](https://sdaiaacademy.github.io/lds-dmg-101/labs/D2_2_active_beneficiary.html)\n\n- [ ] اقرأ التعريفين وسؤال الرئيسة التنفيذية للبيانات (4 د)\n- [ ] عدّ الأسر بكل تعريف في جدول البيانات (10 د)\n- [ ] استخرج الأسر التي يختلف فيها التعريفان وصنّف أسبابها (10 د)\n- [ ] اكتب مدخل القاموس الذي يحسم المصطلح (8 د)\n- [ ] سمّ من يعتمده ومن يُبلَّغ به (3 د)\n- [ ] ✱ إضافي: اقترح اسمين مقيدين للرقمين حتى لا يُخلط بينهما في التقارير","notes":"البداية من families.xlsx وdefinitions_note.txt. 600 أسرة بلا أسماء: لاحظ معهم أن العد لا يحتاج اسمًا، وهذا مبدأ الحد الأدنى. لا تذكر الرقم المنشور هنا؛ يكتشفونه في 2.3. راقب الخلايا الفارغة في تاريخ آخر صرف.","minutes":null,"lo":[]},{"id":"debrief-2-2","n":22,"title":"413 بالصرف، و420 بالحالة، و383 بالاثنين","kind":"content","session":2,"hash":"2c4a9d56","md":"#### [day2#debrief-2-2] 413 بالصرف، و420 بالحالة، و383 بالاثنين\n\n*بعد المختبر 2.2*\n\n- **صُرف لها وليست «مقبول»: 30.** 22 موقوفة و8 مغلقة: صُرف لها في يوليو أو أغسطس ثم تغيرت حالتها.\n- **«مقبول» ولم يُصرف لها: 37.** 28 قُبلت في سبتمبر ولم تصلها دفعة، و9 توقف صرفها قبل يوليو: سؤال للإدارة المالية.\n\n> **المدخل المرجعي.** «مستفيد نشط»: أسرة صُرفت لها إعانة خلال الأشهر الثلاثة السابقة لتاريخ المرجع. والأخرى «أسرة مقبولة». يعتمده مدير البرنامج.","notes":"الأرقام من تشغيل check.py 2.2 على families.xlsx. يُقبل اختيار تعريف الحالة إذا سُمّي الآخر وذُكر المعتمِد. التسعة المتوقف صرفها هي أهم اكتشاف: ليست مشكلة تعريف بل مشكلة صرف.","minutes":null,"lo":["LO3"]},{"id":"s3","n":23,"title":"تتبع أصل البيانات","kind":"section","session":3,"hash":"aae96b94","md":"#### [day2#s3] تتبع أصل البيانات\n\n*الجلسة 3*\n\n- ترسم مسار رقم منشور من مصدره إلى التقرير\n- تميّز النسخ من التحويل في كل محطة\n- تكشف خطوة يدوية غير موثقة وأثرها في الرقم","notes":"","minutes":null,"lo":["LO3"]},{"id":"lineage-answers","n":24,"title":"المخطط يجيب: من أين جاء الرقم، وما الذي تغيّر في طريقه","kind":"content","session":3,"hash":"de344156","md":"#### [day2#lineage-answers] المخطط يجيب: من أين جاء الرقم، وما الذي تغيّر في طريقه\n\n*تتبع أصل البيانات*\n\n- **من أين.** النظام والجدول والنموذج الذي وُلدت فيه البيانات.\n- **ما الذي تغيّر.** كل تصفية وعدّ وحذف ودمج بين المصدر والتقرير.\n- **من لمسه.** كل نظام ومهمة وشخص مرّ الرقم به.\n\n> **متى تحتاجه.** حين يُسأل «لماذا هذا الرقم؟»، وقبل تغيير عمود يعتمد عليه تقرير.","notes":"تتبع الأصل على مستوى الأعمدة وآليًا من الأنظمة موضوع مقرر LDS-DMG-202. هنا مخطط يدوي لمجموعة بيانات واحدة: أول مخرج عمل للمجال، ويطلبه دليل التقييم.","minutes":null,"lo":["LO3"]},{"id":"copy-or-transform","n":25,"title":"كل سهم نسخ أو تحويل، والتحويل يُكتب عليه","kind":"content","session":3,"hash":"8360ab0f","md":"#### [day2#copy-or-transform] كل سهم نسخ أو تحويل، والتحويل يُكتب عليه\n\n*محطات وأسهم*\n\n| على السهم | يعني | مثال من الرعاية المنزلية |\n| --- | --- | --- |\n| **نسخ** | البيانات تصل كما هي | النسخ الليلي من نظام الرعاية إلى المستودع |\n| **تحويل: تصفية** | بعض الصفوف تسقط | زيارات الشهر الماضي فقط |\n| **تحويل: عدّ أو جمع** | صفوف تصير رقمًا | عدد الزيارات لكل حي |\n| **تحويل: تعديل يدوي** | شخص يغيّر شيئًا | حذف زيارات تجريبية من ملف التقرير |","notes":"اطلب من القاعة: أي سهم في جهاتكم لا يعرف أحد ما يحدث عليه؟ الجواب غالبًا ملف جدول بيانات على جهاز موظف.","minutes":null,"lo":["LO3"]},{"id":"home-care-lineage","n":26,"title":"عدد الزيارات في التقرير الشهري للوزارة، من الجهاز اللوحي إلى الخطاب","kind":"content","session":3,"hash":"9d35bb4e","md":"#### [day2#home-care-lineage] عدد الزيارات في التقرير الشهري للوزارة، من الجهاز اللوحي إلى الخطاب\n\n*مثال كامل*\n\n1. **الجهاز اللوحي** الممرضة تسجّل الزيارة\n2. **نظام الرعاية** جدول home_visits\n3. **المستودع** نسخ ليلي\n4. **لوحة الخدمة** عدّ حسب الحي\n5. **ملف المنسقة** تعديل يدوي\n6. **خطاب الوزارة** الرقم الشهري\n\n> **المحطة الحمراء.** ملف على جهاز المنسقة لا يظهر في أي نظام، وهو الذي يغيّر الرقم.","notes":"المثال افتراضي من الرعاية المنزلية. اسأل: لو سألت الوزارة لماذا انخفض الرقم، من يعرف الجواب؟ المنسقة وحدها. المخطط يجعل الخطوة مرئية حتى يقرر أحد هل تبقى، وأين توثق.","minutes":null,"lo":["LO3"]},{"id":"manual-steps-count","n":27,"title":"الخطوة اليدوية جزء من المسار، ولو لم تكن في أي نظام","kind":"content","session":3,"hash":"a1736ad1","md":"#### [day2#manual-steps-count] الخطوة اليدوية جزء من المسار، ولو لم تكن في أي نظام\n\n*أين يقع الخطأ*\n\n- من يرسم الأنظمة وحدها يرسم مسارًا لا ينتج الرقم المنشور\n- اسأل من ينقل الرقم الأخير: ماذا تفعل قبل أن تنقله؟\n- أعد حساب الرقم من المصدر بالتحويلات التي رسمتها: إن لم يطابق، فالمخطط ناقص\n\n> **اختبار المخطط.** مخطط صحيح يعيد إنتاج الرقم المنشور من بيانات المصدر.","notes":"هذا هو الاختبار الذي يطلبه المختبر في الخطوة 4. المخطط ليس رسمًا جميلًا؛ هو حساب يمكن إعادته.","minutes":null,"lo":["LO3"]},{"id":"diagram-conventions","n":28,"title":"أربع قواعد تكفي لمخطط يقرؤه غيرك","kind":"content","session":3,"hash":"f9e5a398","md":"#### [day2#diagram-conventions] أربع قواعد تكفي لمخطط يقرؤه غيرك\n\n*كيف ترسم*\n\n- **اتجاه واحد.** من المصدر إلى التقرير، في اتجاه القراءة.\n- **صندوق لكل محطة.** اسم بلغة العمل، والنظام والجدول تحته.\n- **كلمة على كل سهم.** نسخ، أو التحويل باختصار.\n- **لون لما لا يوثَّق.** ما لا يعرفه إلا شخص واحد يظهر بلون آخر.","notes":"الأدوات أمثلة: draw.io أو Excalidraw أو ورقة وقلم. لا تقضِ وقت المختبر في التنسيق: صندوق ونص وسهم.","minutes":null,"lo":["LO3"]},{"id":"check-lineage","n":29,"title":"المخطط لا يعيد الرقم المنشور","kind":"quiz","session":3,"hash":"354bf98e","md":"#### [day2#check-lineage] المخطط لا يعيد الرقم المنشور\n\n*نقطة تحقق*\n\n**سؤال:** رسمت مسار عدد زيارات الرعاية من النظام إلى خطاب الوزارة، وأعدت الحساب بتحويلاته، فخرج رقم أكبر من المنشور. ما أرجح تفسير؟\n\n- أ. النظام يحسب الزيارات خطأ ويجب إصلاحه\n- ب. في المسار خطوة لم تُرسم تحذف صفوفًا\n- ج. النسخ الليلي يُسقط بعض الصفوف\n- د. الفرق صغير ويمكن إهماله في التقرير الشهري","notes":"الإجابة: ب. هذا ما سيحدث في المختبر. لا تقل أكثر.","minutes":null,"lo":["LO3"]},{"id":"lab-2-3","n":30,"title":"من نموذج الطلب إلى التقرير","kind":"lab","session":3,"hash":"bc984564","md":"#### [day2#lab-2-3] من نموذج الطلب إلى التقرير\n\nالمختبر 2.3 · 35 دقيقة\n\nتتبع مجموعة بيانات من نموذج الطلب إلى التقرير المنشور.\n\n[D2_3_lineage.html](https://sdaiaacademy.github.io/lds-dmg-101/labs/D2_3_lineage.html)\n\n- [ ] اقرأ النموذج والمقابلة ورسالة المحللة ومقتطف التقرير (6 د)\n- [ ] ارسم المحطات بالترتيب (10 د)\n- [ ] اكتب على كل سهم: نسخ أم تحويل، وما التحويل (8 د)\n- [ ] علّم الخطوة غير الموثقة وأعد حساب الرقم المنشور (8 د)\n- [ ] اكتب جملة واحدة لصاحب القرار (3 د)\n- [ ] ✱ إضافي: اقترح مكانًا في المسار يُسجَّل فيه حذف الأسر قيد التدقيق حتى يصبح موثقًا","notes":"الملفات في labs/files/lineage/. لا يحتاج المختبر نتيجة 2.2؛ يعيد الحساب من families.xlsx مباشرة. راقب من يسقط ملف المحللة لأنه «ليس نظامًا».","minutes":null,"lo":[]},{"id":"debrief-2-3","n":31,"title":"المنشور 408 = 420 طلبًا مقبولًا ناقص 12 حُذفت باليد","kind":"content","session":3,"hash":"4619b8ed","md":"#### [day2#debrief-2-3] المنشور 408 = 420 طلبًا مقبولًا ناقص 12 حُذفت باليد\n\n*بعد المختبر 2.3*\n\n- **8** محطات من نموذج الطلب إلى التقرير\n- **2** تحويلان: تصفية «مقبول»، وحذف يدوي غير موثق\n- **0** من التعريفين في المختبر 2.2 يطابق الرقم المنشور\n\n> **ما تعلمته الهيئة.** التقرير يسمي «نشطة» ما يعدّه تعريف الحالة، ثم يحذف منه ما لا يعرفه أحد. الحل: تعريف معتمد، وخطوة موثقة في المستودع.","notes":"من تشغيل check.py 2.3: الرقم في المقتطف يساوي عدد «مقبول» في families.xlsx ناقص الأسر الاثنتي عشرة في رسالة المحللة. اربط بـ 2.2: الآن يعرف الجميع لماذا لم يطابق أي من رقميهم.","minutes":null,"lo":["LO3"]},{"id":"s4","n":32,"title":"من السجل إلى الكتالوج","kind":"section","session":4,"hash":"b1b114b7","md":"#### [day2#s4] من السجل إلى الكتالوج\n\n*الجلسة 4*\n\n- تصنّف حقل بيانات وصفية: أعمال أو فني أو تشغيلي\n- تميّز ما تسحبه أداة الكتالوج آليًا مما يكتبه إنسان\n- تملأ مدخل كتالوج لأصل من السجل","notes":"","minutes":null,"lo":["LO3","LO1"]},{"id":"three-kinds-metadata","n":33,"title":"ثلاثة أنواع من البيانات الوصفية، ولكل منها من يعرفه","kind":"content","session":4,"hash":"fd1d7875","md":"#### [day2#three-kinds-metadata] ثلاثة أنواع من البيانات الوصفية، ولكل منها من يعرفه\n\n*البيانات الوصفية*\n\n- **للأعمال.** ما تعنيه البيانات ولمن هي وكيف يجوز استخدامها: قيود الاستخدام، وجهة الاتصال للأسئلة. يكتبها إنسان.\n- **فنية.** كيف بُنيت البيانات: المفتاح الأساسي، وصيغة الملف، ومهمة النقل. تعرفها الأنظمة.\n- **تشغيلية.** ما يحدث للبيانات أثناء العمل: مدة آخر تحميل، وأخطاؤه، وعدد الاستعلامات. تتغير كل يوم.","notes":"المعيار الوطني يقسم البيانات الوصفية إلى هذه الأنواع الثلاثة: للأعمال، وفنية، وتشغيلية. اطلب مثالًا من سجل الزيارات في الرعاية لكل نوع: «لا يُستخدم لأغراض التسويق» قيد استخدام للأعمال، والمفتاح visit_id فني، وأخطاء تحميل أمس تشغيلية. الأمثلة هنا تختلف عمدًا عن حقول المختبر.\n\nالمصادر: الضوابط الوطنية، التعريفات ومجال البيانات الوصفية ودليل البيانات.","minutes":null,"lo":["LO3","LO1"]},{"id":"harvest-or-write","n":34,"title":"الأداة تسحب ما في الأنظمة، ولا تعرف من يقرر","kind":"content","session":4,"hash":"72f79f55","md":"#### [day2#harvest-or-write] الأداة تسحب ما في الأنظمة، ولا تعرف من يقرر\n\n*آلي أم إنسان*\n\n| في مدخل «سجل الزيارات» | تسحبه الأداة | يكتبه إنسان |\n| --- | --- | --- |\n| المفتاح الأساسي visit_id | نعم |  |\n| عدد الاستعلامات في الشهر | نعم |  |\n| قيود الاستخدام |  | مديرة الرعاية تحددها |\n| جهة الاتصال للأسئلة |  | مشرف الأعمال يكتبها |\n| الغرض الذي جُمعت له البيانات |  | المالكة ومسؤولة حماية البيانات |","notes":"القاعدة: ما في النظام تسحبه الأداة، وما هو قرار أو اتفاق يكتبه إنسان. بعض الأدوات تقترح وصفًا أو تصنيفًا آليًا بنموذج لغوي؛ الاقتراح يحتاج مراجعة مشرف، وقياس خطأ هذه الاقتراحات موضوع LDS-DMG-202. في هذا المقرر: ما يحتاج قرارًا يكتبه إنسان.","minutes":null,"lo":["LO3"]},{"id":"catalogue-demo","n":35,"title":"كتالوج مفتوح المصدر: ما تراه في خمس دقائق","kind":"content","session":4,"hash":"0bc57a9d","md":"#### [day2#catalogue-demo] كتالوج مفتوح المصدر: ما تراه في خمس دقائق\n\n*عرض المدرب*\n\n1. البحث عن جدول باسمه أو بمصطلح\n2. صفحة الجدول: الأعمدة والعدد المسحوبة آليًا\n3. الحقول الفارغة: المالك والوصف والتصنيف\n4. مخطط تتبع الأصل إن وُصلت الأداة بالمسار\n\n- **أمثلة على الأداة.** OpenMetadata أو DataHub: كلاهما مفتوح المصدر وله توثيق رسمي وبيئة تجريبية. الأسماء أمثلة لا توصيات.","notes":"العرض لم يُجرَّب عند بناء المقرر، ولا يحتاجه المختبر. قبل الدفعة: جرّب البيئة التجريبية للأداة التي تختارها، أو اعرض صفحات التوثيق الرسمية (docs.open-metadata.org، datahub.com). لا تعرض بيانات جهة حقيقية. أسماء المنتجات وواجهاتها تتغير: تحقق منها في الشهر نفسه.\n\nالمصادر: OpenMetadata documentation؛ DataHub.","minutes":null,"lo":["LO3","LO1"]},{"id":"catalogue-single-reference","n":36,"title":"الكتالوج مرجع واحد للبيانات الوصفية، والسجل طريقه إليه","kind":"content","session":4,"hash":"cf68a51b","md":"#### [day2#catalogue-single-reference] الكتالوج مرجع واحد للبيانات الوصفية، والسجل طريقه إليه\n\n*في المعيار الوطني*\n\n- مجال البيانات الوصفية ودليل البيانات: وصول إلى بيانات وصفية متكاملة عبر أداة كتالوج هي المرجع الواحد للجهة. النسخة العربية من المعيار تسمي الكتالوج «دليل البيانات» (Data Catalog)\n- الترتيب العملي: سجل يملؤه الناس، ثم أداة تسحب ما يمكن سحبه، ثم مراجعة دورية لما بقي فارغًا\n- مشرف الأعمال يُسند إلى كل أصل في الكتالوج","notes":"الضوابط الوطنية تصف المجال الثاني بهذا المعنى، وتطلب في ضوابطه إسناد مشرفي بيانات إلى البيانات الوصفية المسجلة. إعادة صياغة، لا اقتباس.\n\nالمصادر: الضوابط الوطنية، القسم 6 ومجال البيانات الوصفية.","minutes":null,"lo":["LO1","LO3"]},{"id":"empty-catalogue","n":37,"title":"كتالوج ممتلئ بالأعمدة وفارغ من المعنى لا يستخدمه أحد","kind":"content","session":4,"hash":"23e24db8","md":"#### [day2#empty-catalogue] كتالوج ممتلئ بالأعمدة وفارغ من المعنى لا يستخدمه أحد\n\n*أين يقع الخطأ*\n\n- **ما يحدث.** تُشترى أداة، وتُسحب آلاف الجداول، ولا مالك ولا وصف ولا مصطلح لأي منها. يبحث الموظف، فيجد أسماء جداول لا يفهمها، ويعود إلى سؤال زميله.\n- **ما ينفع.** ابدأ بأصول مجال واحد مسجلة بملاكها، وأدخلها الأداة، وقس كل شهر كم حقلًا للأعمال ما زال فارغًا.","notes":"هذا من الأنماط المعروفة في المجال: الأداة قبل الملكية. اسأل القاعة: هل اشترت جهاتكم أداة قبل أن تعرف من يملأ حقولها؟","minutes":null,"lo":["LO3"]},{"id":"check-metadata","n":38,"title":"من يملأ هذا الحقل؟","kind":"quiz","session":4,"hash":"cfa253dc","md":"#### [day2#check-metadata] من يملأ هذا الحقل؟\n\n*نقطة تحقق*\n\n**سؤال:** في مدخل كتالوج «سجل الزيارات» في الرعاية المنزلية، حقل «مدة الحفظ المعتمدة: خمس سنوات». من أين يأتي؟\n\n- أ. تسحبه الأداة من تاريخ أقدم سجل في الجدول\n- ب. تقترحه الأداة بنموذج لغوي من وصف الجدول\n- ج. يكتبه إنسان من سياسة الحفظ التي اعتمدتها اللجنة\n- د. يستنتجه المشرف الفني من إعدادات النسخ الاحتياطي","notes":"الإجابة: ج. اربط بشريحة «الحوكمة تقرر» في اليوم الأول: سياسة الحفظ تعتمدها اللجنة، والكتالوج يحمل نتيجتها. من اختار «د» خلط بين نسخ النظام الاحتياطية وحفظ السجلات نفسها.","minutes":null,"lo":["LO3"]},{"id":"lab-2-4","n":39,"title":"ثلاثة مدخلات كتالوج","kind":"lab","session":4,"hash":"66c87434","md":"#### [day2#lab-2-4] ثلاثة مدخلات كتالوج\n\nالمختبر 2.4 · 35 دقيقة\n\nتحوّل ثلاثة صفوف من سجل مرجعي إلى مدخلات كتالوج: تصنف أربعة عشر حقلًا، وتحدد من يملأ كلًّا منها، وتكتب ما ينقص.\n\n[D2_4_catalogue.html](https://sdaiaacademy.github.io/lds-dmg-101/labs/D2_4_catalogue.html)\n\n- [ ] اقرأ الحقول الأربعة عشر وصفوف السجل الثلاثة (4 د)\n- [ ] صنّف كل حقل: أعمال أو فني أو تشغيلي (8 د)\n- [ ] حدد ما تسحبه الأداة آليًا وما يكتبه إنسان (7 د)\n- [ ] املأ المدخلات الثلاثة مما تعرفه (11 د)\n- [ ] اكتب الحقول التي بقيت فارغة ومن يملؤها (5 د)\n- [ ] ✱ إضافي: شاهد عرض المدرب لأداة كتالوج مفتوحة المصدر، وسمّ حقلين سحبتهما الأداة ولم تكتبهما أنت","notes":"البداية من register_start.xlsx، لا من سجل المشارك. الأصول الثلاثة: A-02 الأسر، وA-09 المدفوعات، وA-13 المؤشرات المنشورة. التمرين الإضافي هو العرض الحي إن كان متاحًا.","minutes":null,"lo":[]},{"id":"debrief-2-4","n":40,"title":"ستة حقول تسحبها الأداة، وثمانية تنتظر إنسانًا","kind":"content","session":4,"hash":"78c4ea91","md":"#### [day2#debrief-2-4] ستة حقول تسحبها الأداة، وثمانية تنتظر إنسانًا\n\n*بعد المختبر 2.4*\n\n| البند | القيمة |\n| --- | --- |\n| للأعمال | 7 |\n| تشغيلية | 4 |\n| فنية | 3 |\n\n> **والمدفوعات.** بلا مشرف من جهة الأعمال، ومالكها «قيد التأكيد»: الكتالوج يكشف ما لم يحسمه السجل.","notes":"من تشغيل check.py 2.4 وlabs/solutions/D2_4_catalogue.md. لا حقل آلي من بيانات الأعمال: هذه قاعدة يتحقق منها الحل.","minutes":null,"lo":["LO3"]},{"id":"wrap-up","n":41,"title":"ثلاثة أمور تبقى معك","kind":"content","session":4,"hash":"292fdc91","md":"#### [day2#wrap-up] ثلاثة أمور تبقى معك\n\n*خلاصة اليوم 2*\n\n- **التعريف شرط يُعد.** نوع ثم ما يميزه، وقاعدة حساب، ومالك يعتمد. ما لا يُعد لا يحسم شيئًا.\n- **المسودة تحتاج دليلًا.** مدخل سلس من مساعد يُراجع سطرًا سطرًا، وكل تصحيح له مصدر.\n- **المخطط يعيد الرقم.** مسار لا يعيد إنتاج الرقم المنشور مسار ناقص، والناقص غالبًا ملف على جهاز.","notes":"اسأل: أي رقم في جهاتكم تريدون أن تتتبعوا أصله غدًا؟ هذا من أفضل موضوعات مهمة المتابعة.","minutes":null,"lo":[]},{"id":"next","n":42,"title":"الحماية والجودة والقياس","kind":"content","session":4,"hash":"8f8fd657","md":"#### [day2#next] الحماية والجودة والقياس\n\n*غدًا · اليوم 3*\n\nمستويات تصنيف مبدئية لخمسة عشر أصلًا، وقياس ثلاثة جداول، وستة طلبات على مكتب البيانات، ولقطة نضج من عشرين وثيقة تبدأ بها المشروع الختامي.","notes":"لا تحضير غير قراءة موجز سياسة التصنيف في ملف classification_guide.txt إن أراد أحد أن يسبق. المختبرات غير المكتملة تُكمل من ملفاتها.","minutes":null,"lo":[]}],"activities":[{"id":"check-review-day1-q1","slide":"check-review-day1","type":"single","prompt":"في المراكز المجتمعية، طلب مدرب قائمة المشتركين بأرقام جوالاتهم. أعدّ المنسق القائمة، وينتظر المشرف الفني من يقول له «أرسل». من يقول ذلك؟","options":[{"key":"أ","text":"المنسق، لأنه أعدّ القائمة وراجع أسماءها"},{"key":"ب","text":"الرئيس التنفيذي للبيانات"},{"key":"ج","text":"مالك بيانات المراكز المجتمعية"},{"key":"د","text":"المشرف الفني نفسه، لأنه من سيرسل الملف"}],"correct":[2],"explanation":"مشاركة بيانات مجال قرار يعتمده مالكه. المنسق أعدّ، والمشرف الفني سينفذ.","misconceptions":["يخلط بين من أعدّ القائمة ومن يملك قرار مشاركتها","يرفع كل قرار إلى الرئيس التنفيذي، وهو يقود المكتب ولا يملك بيانات المجال","","يظن أن من يرسل الملف يقرر إرساله: المشرف ينفذ بعد الموافقة"],"lo":["LO2"]},{"id":"check-glossary-q1","slide":"check-glossary","type":"single","prompt":"مدخل في قاموس الرعاية المنزلية: «مقدم الرعاية: الشخص الذي يقدم الرعاية للمستفيد في منزله. المالك: مديرة الرعاية. المشرف: منسقة الزيارات. المصدر: دليل الخدمة. الحالة: مسودة.» أي بند من القائمة لا يجتازه؟","options":[{"key":"أ","text":"البند الثالث: التعريف دائري يعيد الكلمة"},{"key":"ب","text":"البند السادس: المالك والمشرف غير مذكورين معًا"},{"key":"ج","text":"البند السابع: المصدر غير مذكور في المدخل"},{"key":"د","text":"البند الرابع: لا قاعدة حساب للمصطلح"}],"correct":[0],"explanation":"«يقدم الرعاية» تعيد كلمات المصطلح نفسه. تعريف أقوى: ممرض أو أخصائي علاج طبيعي مرخّص، مكلف بزيارات مستفيد بخطة رعاية معتمدة.","misconceptions":["","المالك والمشرف مذكوران كلاهما في المدخل؛ القراءة السريعة تفوّت سطرًا","المصدر مذكور، وهو دليل الخدمة نفسه الذي يُرجع إليه","ليس لكل مصطلح قاعدة حساب، ومقدم الرعاية شخص لا رقم"],"lo":["LO3"]},{"id":"check-two-definitions-q1","slide":"check-two-definitions","type":"single","prompt":"عددتَ «الزيارات المكتملة» بتعريفين في الرعاية المنزلية وحصلت على رقمين. ما أنفع ما تقدمه لمديرة الرعاية قبل أن تقرر؟","options":[{"key":"أ","text":"الفرق الصافي بين الرقمين مع نسبته المئوية"},{"key":"ب","text":"التعريف الأصح في رأيك مع تبريره المكتوب"},{"key":"ج","text":"متوسط الرقمين حلًّا وسطًا بين الفريقين"},{"key":"د","text":"المجموعات المختلفة وعددها وسبب كل منها"}],"correct":[3],"explanation":"كل مجموعة تكشف قرارًا (هل الطارئة مكتملة؟ هل التسجيل إلزامي؟). المالكة تحسم بها المصطلح، لا بالفرق الصافي.","misconceptions":["يخفي اتجاهين متعاكسين في رقم صافٍ واحد","يقرر بدل المالك، فيحسم المحلل ما يعود إلى صاحب القرار","الحل الوسط يصنع رقمًا ثالثًا لا يخدم أي قرار",""],"lo":["LO3"]},{"id":"check-lineage-q1","slide":"check-lineage","type":"single","prompt":"رسمت مسار عدد زيارات الرعاية من النظام إلى خطاب الوزارة، وأعدت الحساب بتحويلاته، فخرج رقم أكبر من المنشور. ما أرجح تفسير؟","options":[{"key":"أ","text":"النظام يحسب الزيارات خطأ ويجب إصلاحه"},{"key":"ب","text":"في المسار خطوة لم تُرسم تحذف صفوفًا"},{"key":"ج","text":"النسخ الليلي يُسقط بعض الصفوف"},{"key":"د","text":"الفرق صغير ويمكن إهماله في التقرير الشهري"}],"correct":[1],"explanation":"المنشور أصغر: شيء حذف صفوفًا بعد آخر محطة رسمتها. ابحث عمّن ينقل الرقم الأخير.","misconceptions":["يفترض خطأ النظام قبل أن يتحقق من اكتمال المخطط","","النسخ الليلي ينقل البيانات كما هي ولا يغيّر عددها","يقبل الفرق دون تفسير، والمخطط المطلوب يعيد الرقم بالضبط"],"lo":["LO3"]},{"id":"check-metadata-q1","slide":"check-metadata","type":"single","prompt":"في مدخل كتالوج «سجل الزيارات» في الرعاية المنزلية، حقل «مدة الحفظ المعتمدة: خمس سنوات». من أين يأتي؟","options":[{"key":"أ","text":"تسحبه الأداة من تاريخ أقدم سجل في الجدول"},{"key":"ب","text":"تقترحه الأداة بنموذج لغوي من وصف الجدول"},{"key":"ج","text":"يكتبه إنسان من سياسة الحفظ التي اعتمدتها اللجنة"},{"key":"د","text":"يستنتجه المشرف الفني من إعدادات النسخ الاحتياطي"}],"correct":[2],"explanation":"المدة المعتمدة قرار حوكمة، والقرار لا يُسحب من النظام. الأداة تعرف عمر أقدم سجل، والفرق بينهما يكشف هل تُطبَّق السياسة.","misconceptions":["الأداة ترى عمر أقدم سجل في الجدول، لا المدة التي اعتُمدت","الاقتراح الآلي يحتاج مراجعة، والمدة قرار لا يُستنتج من وصف الجدول","","مدة بقاء النسخ الاحتياطية إعداد تقني، لا قرار حفظ معتمد"],"lo":["LO3"]}],"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":"day2.md","llms":"../llms.txt"},"tasks":[],"tools":[]},"bridge":{"allowedOrigins":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

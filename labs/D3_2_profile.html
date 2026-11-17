@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 3.2 · تنميط ثلاثة جداول · أسس إدارة البيانات</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D3_2_profile.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day3.html#lab-3-2">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 3.2</span>
+<h1>تنميط ثلاثة جداول</h1>
+<p>تنميط ثلاثة جداول واقتراح مستويات تصنيفها.</p>
+<div class="meta"><span>35 دقيقة</span><span>اليوم 3</span><span>الجلسة 2: أبعاد الجودة</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="3.2">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>نسب الاكتمال والصلاحية المقيسة في ثلاثة جداول، بقواعد مكتوبة.</li>
+    <li>سجل مشكلات من ثلاثة أسطر بالبعد والأثر والمالك، ومستوى تصنيف مبدئي وسببه لكل جدول.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/quality_tables.xlsx" download><b>quality_tables.xlsx</b><span>ثلاث أوراق: عينة من 200 أسرة، و300 دفعة في الربع الثالث، و150 زيارة ميدانية؛ وورقة «القواعد».</span></a>
+  <a href="files/classification_guide.txt" target="_blank"><b>classification_guide.txt</b><span>الدليل نفسه الذي استعملته في المختبر 3.1.</span></a>
+</div>
+<p class="small">أرقام الهوية والجوالات اصطناعية، لكنها تُعامل كأنها حقيقية: لا تُلصق في أي أداة ذكاء اصطناعي. الذكاء الاصطناعي مرشد: يجوز أن تسأل عن صيغة دالة.</p>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · الجداول والقواعد <span class="min">4 د</span></h3>
+  <p>افتح الأوراق الثلاث وورقة القواعد. كل قاعدة صلاحية مكتوبة: لا تخترع قاعدة غيرها.</p>
+</div>
+
+<div class="step">
+  <h3>2 · الاكتمال <span class="min">8 د</span></h3>
+  <p>لكل عمود مطلوب: عدد الخلايا غير الفارغة مقسومًا على عدد الصفوف. الأعمدة: الجوال، وتاريخ الصرف، ونتيجة الزيارة.</p>
+  <div class="prompt" data-tool="جدول بيانات">=COUNTA(C2:C201)/200</div>
+</div>
+
+<div class="step">
+  <h3>3 · الصلاحية <span class="min">11 د</span></h3>
+  <p>طبّق قواعد الورقة: رقم الهوية، ورمز المنطقة، والمبلغ، والنتيجة، وتاريخ الزيارة. اقسم على المملوء لا على كل الصفوف حين تقيس صلاحية عمود فيه فراغات، واكتب أي قسمة استعملت.</p>
+  <div class="prompt" data-tool="جدول بيانات">=COUNTIFS(C2:C301,"&gt;0",C2:C301,"&lt;=3000")</div>
+</div>
+
+<div class="step">
+  <h3>4 · سجل المشكلات <span class="min">6 د</span></h3>
+  <p>ثلاثة أسطر: المشكلة بعددها، والبعد، والأثر في العمل، والمالك الذي يقرر الإصلاح.</p>
+  <table>
+    <tr><th>المشكلة</th><th>البعد</th><th>الأثر</th><th>المالك</th></tr>
+    <tr><td class="fill"></td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  </table>
+</div>
+
+<div class="step">
+  <h3>5 · مستوى كل جدول <span class="min">6 د</span></h3>
+  <p>اقترح مستوى تصنيف مبدئيًا لكل جدول من الدليل، مع السبب. انظر في الأعمدة كلها، لا في اسم الجدول.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي</h3>
+  <p>اقترح قاعدة جودة لبعد ثالث (التفرد أو الآنية) على أحد الجداول.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>ما نسبة اكتمال الجوال في عينة الأسر؟</li>
+  <li>كم دفعة مبلغها خارج القاعدة، وكم منها صفر أو سالب؟</li>
+  <li>لماذا جدول الزيارات «سري» مع أنه لا يحوي مبالغ؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>الأرقام في <code>labs/solutions/D3_2_profile.md</code> ومن تشغيل <code>check.py 3.2</code>: الجوال 177 من 200 (88.5%)، والهوية الصالحة 193، والمنطقة 196؛ تاريخ الصرف 295 من 300، والمبلغ الصالح 295 (3 صفر أو سالب، و2 فوق الحد)؛ نتيجة الزيارة 138 من 150، والصالح منها 132، وزيارتان في المستقبل.</li>
+    <li>الخطأ الشائع: قسمة صلاحية النتيجة على 150 بدل 138. كلاهما مقبول إذا كُتب، والأوضح فصل الاكتمال عن الصلاحية.</li>
+    <li>المستويات: عينة الأسر مقيد، والدفعات سري، والزيارات سري (ملاحظات صحية).</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D3_1_classify.html" rel="prev">→ المختبر السابق</a><a href="D3_3_requests.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار التنفيذيين والقادة · أسس إدارة البيانات<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع 87991cf</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T22:00:29Z","version":"2027.1.0","commit":"87991cf"},"course":{"id":"lds-dmg-101","code":"LDS-DMG-101","title":"أسس إدارة البيانات","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-dmg-101/","repo":"SDAIAAcademy/lds-dmg-101","home":"../index.html"},"lab":{"id":"3.2","title":"تنميط ثلاثة جداول","summary":"تنميط ثلاثة جداول واقتراح مستويات تصنيفها.","minutes":35,"day":3,"unit":"اليوم 3","session":2,"deck":"../slides/day3.html#lab-3-2","prev":"D3_1_classify.html","next":"D3_3_requests.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>
