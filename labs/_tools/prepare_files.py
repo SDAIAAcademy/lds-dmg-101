@@ -63,7 +63,17 @@ def sheet(wb, title, header, rows, fill_cols=(), widths=None, validations=None):
         ws.column_dimensions[openpyxl.utils.get_column_letter(i + 1)].width = w
     ws.freeze_panes = "A2"
     for col, values in (validations or {}).items():
-        dv = DataValidation(type="list", formula1='"' + ",".join(values) + '"', allow_blank=True)
+        inline = '"' + ",".join(values) + '"'
+        if len(inline) > 250:  # Excel refuses an inline list longer than 255 characters: use a hidden sheet
+            if "lists" not in wb.sheetnames:
+                wb.create_sheet("lists").sheet_state = "hidden"
+            lw = wb["lists"]
+            lc = lw.max_column + 1 if lw.max_row > 1 or lw["A1"].value else 1
+            for i, v in enumerate(values):
+                lw.cell(row=i + 1, column=lc, value=v)
+            letter = openpyxl.utils.get_column_letter(lc)
+            inline = f"lists!${letter}$1:${letter}${len(values)}"
+        dv = DataValidation(type="list", formula1=inline, allow_blank=True)
         ws.add_data_validation(dv)
         dv.add(f"{col}2:{col}{max(2, len(rows) + 1)}")
     return ws
