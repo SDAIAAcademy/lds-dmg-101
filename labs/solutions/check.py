@@ -292,6 +292,7 @@ def lab_3_4():
 
 
 def main(argv):
+    sys.stdout.reconfigure(encoding="utf-8")  # Arabic output on any console code page
     wanted = argv or list(LABS)
     failed = 0
     for lab_id in wanted:

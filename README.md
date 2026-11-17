@@ -53,7 +53,7 @@ Data Management Foundations
 - دون ذكاء اصطناعي: اختبار السيناريوهات، وأول خمسة مدخلات في القاموس (المختبر 2.1).
 - مرشد في بقية المختبرات: يسأل عن التعريفات ولا يكتبها. لا يحتاج أي مختبر مساعدًا ليكتمل.
 - كامل في صياغة خطة المشروع الختامي، ويعرضها المشارك ويجيب عنها.
-- يراجع المشارك كل مدخل صاغه مساعد مقابل ملاحظات المصدر ويسجل كل تصحيح (المختبر 2.1). لا تدخل بيانات مصنفة أداة غير معتمدة.
+- يراجع المشارك كل مدخل صاغه مساعد مقابل ملاحظات المصدر ويسجل كل تصحيح (المختبر 2.1). لا تدخل أي أداة ذكاء اصطناعي توليدي بيانات مصنفة «مقيد» فأعلى، معتمدة كانت الأداة أم لا.
 
 ## العمل التحضيري ومهمة المتابعة
 
@@ -62,7 +62,7 @@ Data Management Foundations
 
 ## المختبرات: ما يُشغَّل
 
-كل مختبر جدول بيانات أو مخطط أو قرار مكتوب على ملفات `labs/files/`، ولكل منه حل مرجعي في `labs/solutions/`. الأمر
+كل يوم تدريبي أربع جلسات من 70 دقيقة: نحو 35 دقيقة للمفاهيم والأمثلة، ثم مختبر من 35 دقيقة (7 ساعات تعليم و7 ساعات مختبرات في الأيام الثلاثة). كل مختبر جدول بيانات أو مخطط أو قرار مكتوب على ملفات `labs/files/`، ولكل منه حل مرجعي في `labs/solutions/`، ونقطة بدء كل مختبر وحله في `labs/README.md`. الأمر
 
 ```
 uv run labs/solutions/check.py
@@ -134,6 +134,7 @@ uv run labs/solutions/check.py
 - [سياسة وضوابط حرية المعلومات](https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf)
 - [نظام حماية البيانات الشخصية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf)
 - [Personal Data Protection Law (English translation)](https://sdaia.gov.sa/en/SDAIA/about/Documents/PersonalDataProtectionLaw.pdf)
+- [مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (سدايا، 2025)](https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf)
 
 ### مجموعة المعارف
 
@@ -152,9 +153,10 @@ uv run labs/solutions/check.py
 ### المرجعيات الوطنية
 
 - ضوابط ومواصفات إدارة البيانات الوطنية وحوكمتها وحماية البيانات الشخصية (مكتب إدارة البيانات الوطنية): https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataManagementPersonalDataProtectionStandardsAr.pdf
-- المؤشر الوطني للبيانات (نضيء)، سدايا: لم نجد عنوانًا رسميًا لنصه في 2026-11-17؛ يُذكر في المقرر باسمه فقط، ولا يُنسب إليه مقياس المستويات الستة المستعمل في المختبرات، فهو دليل تقدير خاص بدراسة الحالة.
+- المؤشر الوطني للبيانات، سدايا: لم نجد عنوانًا رسميًا لنصه في 2026-11-17؛ يُذكر في المقرر باسمه فقط، ولا يُنسب إليه مقياس المستويات الستة المستعمل في المختبرات، فهو دليل تقدير خاص بدراسة الحالة.
 - سياسة تصنيف البيانات: https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf
 - سياسة مشاركة البيانات: https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataSharingPolicyAR.pdf ؛ سياسة البيانات المفتوحة: https://sdaia.gov.sa/ar/SDAIA/about/Documents/OpenDataPolicyAr.pdf ؛ سياسة وضوابط حرية المعلومات: https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf
 - نظام حماية البيانات الشخصية: https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf
+- مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (سدايا، 2025): https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf ؛ منها قاعدة المقرر في ما يدخل أدوات الذكاء الاصطناعي (لا بيانات مصنفة «مقيد» فأعلى).
 
 كل هذه العناوين مأخوذة من صفحة الأنظمة والسياسات في سدايا (https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)، وفُتح كل ملف منها في 2026-11-17.
