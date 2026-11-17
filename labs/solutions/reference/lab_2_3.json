@@ -1,0 +1,25 @@
+{
+ "nodes": [
+  "نموذج الطلب (البوابة)",
+  "APP · applications و families",
+  "مهمة النقل الليلية",
+  "RPT · stg_families",
+  "RPT · monthly_beneficiary_summary",
+  "ملف المحللة (جدول بيانات)",
+  "RPT · published_quarterly_indicators",
+  "التقرير الربعي"
+ ],
+ "transformations": [
+  "تصفية: حالة الطلب مقبول، آخر يوم من الشهر (العرض)",
+  "حذف يدوي غير موثق لـ 12 أسرة قيد التدقيق (ملف المحللة)"
+ ],
+ "copies": [
+  "النسخ الليلي كما هو",
+  "نقل الإجمالي يدويًا إلى جدول المؤشرات",
+  "النسخ إلى التقرير"
+ ],
+ "published": 408,
+ "status_count": 420,
+ "removed": 12,
+ "definition_used": "حالة الطلب مقبول"
+}

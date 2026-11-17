@@ -5,7 +5,7 @@ Data Management Foundations
 
 مسار التنفيذيين والقادة · أكاديمية سدايا · LDS-DMG-101 · المستوى 100
 
-REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك فعله بعد المقرر
+تبني أول مخرج عمل في كل مجال من مجالات إدارة البيانات، وتعرف من يقرر ومن ينفذ، وتقدّر النضج بالدليل لا بالانطباع
 
 يتعلم المشاركون مجالات المعارف في إدارة البيانات بإنتاج أول مخرج عمل في كل مجال لجهة افتراضية تقدم خدمات عامة. فانطلاقًا من مستخرجات أنظمة اصطناعية وملاحظات مقابلات، يبنون سجلًا لأصول البيانات، ويكتبون مدخلات في قاموس مصطلحات الأعمال، ويتتبعون أصل مجموعة بيانات واحدة، وينفذون فحوصًا بسيطة للجودة، ويقترحون تصنيفات مبدئية، ويضعون كل مخرج عمل في موضعه من مجالات معيار وطني. ويختمون بلقطة لمستوى النضج وخطة تحسين للسنة الأولى.
 
@@ -29,9 +29,9 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | الوحدة | العنوان | الجلسات | الشرائح |
 |---|---|---|---|
-| اليوم 1 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day1.html`](slides/day1.html) |
-| اليوم 2 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day2.html`](slides/day2.html) |
-| اليوم 3 | REPLACE: موضوع هذه الوحدة في كلمات قليلة | REPLACE: عنوان الجلسة 1; REPLACE: عنوان الجلسة 2; REPLACE: عنوان الجلسة 3; REPLACE: عنوان الجلسة 4 | [`slides/day3.html`](slides/day3.html) |
+| اليوم 1 | البيانات أصلٌ يُدار | ما إدارة البيانات; مجالات المعارف والمعيار الوطني; من يقرر ومن ينفذ; سجل الأصول | [`slides/day1.html`](slides/day1.html) |
+| اليوم 2 | المعنى والمسار | قاموس الأعمال وقاموس البيانات; مصطلح واحد ومعنيان; تتبع أصل البيانات; من السجل إلى الكتالوج | [`slides/day2.html`](slides/day2.html) |
+| اليوم 3 | الحماية والجودة والقياس | التصنيف بحسب أثر الإفصاح; أبعاد الجودة; البيانات الشخصية والمشاركة وأدوات الذكاء الاصطناعي; النضج والأدلة | [`slides/day3.html`](slides/day3.html) |
 | المشروع الختامي | عروض المشروع الختامي |  | [`slides/capstone.html`](slides/capstone.html) |
 <!-- /academy:units -->
 
@@ -46,18 +46,18 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 
 | | الجلسة | المختبر | الملف |
 |---|---|---|---|
-| 1.1 | اليوم 1 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 1.1 | [`D1_1.html`](labs/D1_1.html) |
-| 1.2 | اليوم 1 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 1.2 | [`D1_2.html`](labs/D1_2.html) |
-| 1.3 | اليوم 1 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 1.3 | [`D1_3.html`](labs/D1_3.html) |
-| 1.4 | اليوم 1 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 1.4 | [`D1_4.html`](labs/D1_4.html) |
-| 2.1 | اليوم 2 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 2.1 | [`D2_1.html`](labs/D2_1.html) |
-| 2.2 | اليوم 2 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 2.2 | [`D2_2.html`](labs/D2_2.html) |
-| 2.3 | اليوم 2 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 2.3 | [`D2_3.html`](labs/D2_3.html) |
-| 2.4 | اليوم 2 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 2.4 | [`D2_4.html`](labs/D2_4.html) |
-| 3.1 | اليوم 3 · الجلسة 1 | REPLACE: ما يبنيه المشاركون في المختبر 3.1 | [`D3_1.html`](labs/D3_1.html) |
-| 3.2 | اليوم 3 · الجلسة 2 | REPLACE: ما يبنيه المشاركون في المختبر 3.2 | [`D3_2.html`](labs/D3_2.html) |
-| 3.3 | اليوم 3 · الجلسة 3 | REPLACE: ما يبنيه المشاركون في المختبر 3.3 | [`D3_3.html`](labs/D3_3.html) |
-| 3.4 | اليوم 3 · الجلسة 4 | REPLACE: ما يبنيه المشاركون في المختبر 3.4 | [`D3_4.html`](labs/D3_4.html) |
+| 1.1 | اليوم 1 · الجلسة 1 | دورة حياة ملف الأسرة | [`D1_1_lifecycle.html`](labs/D1_1_lifecycle.html) |
+| 1.2 | اليوم 1 · الجلسة 2 | خريطة المجالات ومخرجاتها وأدوارها | [`D1_2_domains.html`](labs/D1_2_domains.html) |
+| 1.3 | اليوم 1 · الجلسة 3 | عشرة قرارات وأدوارها | [`D1_3_decisions.html`](labs/D1_3_decisions.html) |
+| 1.4 | اليوم 1 · الجلسة 4 | سجل من 15 أصلًا | [`D1_4_asset_register.html`](labs/D1_4_asset_register.html) |
+| 2.1 | اليوم 2 · الجلسة 1 | خمسة مدخلات بيدك وخمسة تصححها | [`D2_1_glossary.html`](labs/D2_1_glossary.html) |
+| 2.2 | اليوم 2 · الجلسة 2 | من هو «المستفيد النشط»؟ | [`D2_2_active_beneficiary.html`](labs/D2_2_active_beneficiary.html) |
+| 2.3 | اليوم 2 · الجلسة 3 | من نموذج الطلب إلى التقرير | [`D2_3_lineage.html`](labs/D2_3_lineage.html) |
+| 2.4 | اليوم 2 · الجلسة 4 | ثلاثة مدخلات كتالوج | [`D2_4_catalogue.html`](labs/D2_4_catalogue.html) |
+| 3.1 | اليوم 3 · الجلسة 1 | مستويات مبدئية لخمسة عشر أصلًا | [`D3_1_classify.html`](labs/D3_1_classify.html) |
+| 3.2 | اليوم 3 · الجلسة 2 | تنميط ثلاثة جداول | [`D3_2_profile.html`](labs/D3_2_profile.html) |
+| 3.3 | اليوم 3 · الجلسة 3 | ستة طلبات على مكتب البيانات | [`D3_3_requests.html`](labs/D3_3_requests.html) |
+| 3.4 | اليوم 3 · الجلسة 4 | لقطة نضج من حزمة أدلة | [`D3_4_maturity.html`](labs/D3_4_maturity.html) |
 <!-- /academy:labs -->
 
 ## المشروع الختامي
@@ -84,7 +84,30 @@ REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك
 <!-- academy:sources -->
 ## المصادر
 
-- REPLACE: كل مصدر يستشهد به المقرر مع عنوانه، في course.json ضمن "sources"؛ هذه القائمة تُكتب من هناك
+### المراجع الوطنية
+
+- [سدايا: الأنظمة والسياسات (صفحة الفهرس)](https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx)
+- [مكتب إدارة البيانات الوطنية: ضوابط ومواصفات إدارة البيانات الوطنية وحوكمتها وحماية البيانات الشخصية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataManagementPersonalDataProtectionStandardsAr.pdf)
+- [NDMO: Data Management and Personal Data Protection Standards (English edition)](https://sdaia.gov.sa/en/SDAIA/about/Documents/DataManagementPersonalDataProtectionStandards.pdf)
+- [سياسة تصنيف البيانات](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf)
+- [سياسة مشاركة البيانات](https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataSharingPolicyAR.pdf)
+- [سياسة البيانات المفتوحة](https://sdaia.gov.sa/ar/SDAIA/about/Documents/OpenDataPolicyAr.pdf)
+- [سياسة وضوابط حرية المعلومات](https://sdaia.gov.sa/ar/SDAIA/about/Documents/FreedomOfInformationPolicyAr.pdf)
+- [نظام حماية البيانات الشخصية](https://sdaia.gov.sa/ar/SDAIA/about/Documents/PersonalDataProtectionLawAr.pdf)
+- [Personal Data Protection Law (English translation)](https://sdaia.gov.sa/en/SDAIA/about/Documents/PersonalDataProtectionLaw.pdf)
+
+### مجموعة المعارف
+
+- [DAMA International: What is DAMA International? (11 knowledge areas, DMBOK 3.0 targeted for 2027)](https://dama.org/2026/04/14/what-is-dama-international-a-guide-for-data-professionals/)
+- [DAMA International: DAMA-DMBOK 3.0 Project](https://dama.org/dama-dmbok-3-0-project/)
+
+### الأدوات (أمثلة)
+
+- [OpenMetadata documentation](https://docs.open-metadata.org/)
+- [DataHub](https://datahub.com/)
+- [draw.io](https://www.drawio.com/)
+- [Excalidraw](https://excalidraw.com/)
+- [LibreOffice](https://www.libreoffice.org/)
 <!-- /academy:sources -->
 
 ### المرجعيات الوطنية
